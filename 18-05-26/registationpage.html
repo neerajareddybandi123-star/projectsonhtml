@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation page</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <section>
+     <h2>Registration Form</h2>
+            <fieldset>
+                <legend>Registation Form</legend>
+                   <form action="welcomepage.html">
+
+                    <label>FullName:</label>
+                     <input type="text" id="name" name="name" required minlength="3" maxlength="30" placeholder="Enter your name" required>
+                     <br>
+                     <br>
+                     <label>User Id</label>
+                     <input type="number" id="number">
+                     <br>
+                     <br>
+                     <label>Password</label>
+                     <input type="password" id="password" name="password"  pattern="[A-Za-z0-9@#$]{8,}">
+                     <br>
+                     <br>
+                     <label>Email:</label>
+                     <input type="email" id="email" name="email" required>
+                     <br>
+                     <br>
+                      <label for="dob">Date of Birth:</label>
+
+                     <input type="date"  id="dob" name="dob">
+                     <br>
+                     <br>
+
+                     <label>Phone NUmber</label>
+                     <input type="number" id="phone" name="phone"  minlength="10" maxlength="10">
+                     <br>
+                     <br>
+                     <label>Gender</label>
+                     <input type="radio" name="Gender" id="Gallery" value="Male">Male
+                      <input type="radio" name="Gender" id="Gender" value="Female">Female
+                      <br>
+                      <br>
+                      <label>Smart cities</label>
+                      <input type="checkbox" id="chennai" name="city">Robotics
+                      <input type="checkbox" id="chennai" name="city"> IoT
+                      <input type="checkbox" id="chennai" name="city">AI
+                      <br>
+                      <br>
+                      <label>Select Smart Cities</label>
+                    <select>
+                        <option>Select</option>
+                        <option>Chennai</option>
+                        <option>Hyderabad</option>
+                        <option>Bangalore</option>
+                      <option>Mumbai</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Address</label>
+                     <textarea id="address" name="address"  rows="5" cols="40" placeholder="Enter your address"></textarea>
+                     <br>
+                     <br>
+                     <label>File Upload</label>
+                     <input type="file" id="file">
+                     <br>
+                     <br>
+                     <label>Color:</label>
+                     <input type="color">
+                     <br>
+                     <br>
+                     <label>Range</label>
+                     <input type="range">
+                     <br>
+                     <br>
+                    <input type="checkbox" required>I agree to the Terms of Service and Privacy Policy.
+                    <br>
+                    <br>
+                    <input type="submit" value="Register">
+                     <input type="reset" value="Clear">
+                     <a href="smartcitywebsite.html">
+                     <button type="button">Back to Home</button>
+                     
+                    
+                      
+                
+                    </form>
+            </fieldset>
+            </section>
+</body>
+</html>
