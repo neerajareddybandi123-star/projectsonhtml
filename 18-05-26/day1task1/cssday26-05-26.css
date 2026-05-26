@@ -1,0 +1,51 @@
+body{
+    background-color:rgb(186, 186, 212);
+    padding:20px;
+   
+}
+.ab{
+      width:1100px;
+      background-color:#1f376d;
+      color:white;
+      padding:40px;
+     
+}
+.abc{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.abc img{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 50%;
+}
+h1{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+ h2{
+      color:#6ed36e;
+      font-size:35px;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+    h3{
+        font-family: 30px;
+        font-weight: bold;
+        color: aqua;
+
+    }
+
+p{
+    margin-top:10px;
+    font-size:15px;
+}
+
+    .details p{
+      font-size:24px;
+      margin-bottom:18px;
+
+    }
