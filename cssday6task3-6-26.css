@@ -1,0 +1,132 @@
+body{
+    background-color:gainsboro;
+    padding:60px 0;
+    align-items: center;
+    flex-direction: column;
+}
+.box1{
+    width:400px;
+    height: 470px;
+    background:#fff;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    margin-left: 400px;
+    padding:20px;
+}
+.logo{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.pro{
+    display: block;
+    background:#eef3f8;
+    color:#29255f;
+    margin:20px auto 0 ;
+    border: none;
+    border-radius: 30px;
+}
+.box1 h2{
+    margin-top:20px;
+    color:black;
+}
+.h4{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight:normal;
+}
+.para{
+    margin-top:15px;
+    color:#888;
+    line-height:28px;
+    text-shadow: 1px 1px 2px green, 0 0 1em #ee5a24;
+}
+.icons i{
+    font-size:22px;
+    color:black;
+    margin:0 12px;
+}
+.btn{
+    display:flex;
+    gap:50px;
+    margin-top:40px;
+    justify-content: center;
+}
+.message{
+    width: 180px;
+    height: 60px;
+    border-radius: 15px;
+    background: white;
+    border: 2px solid #2a275f;
+    color:#2a275f;
+    font-weight: bold;
+    font-size: 20px;
+}
+.connect{
+    width:180px;
+    height:60px;
+    border:none;
+    border-radius:15px;
+    background:#2a275f;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+.box2{
+    width:400px;
+    height: 300px;
+    background:#ffffff;
+    border-radius:30px;
+    padding:30px;
+    margin-top:40px;
+    margin-left: 390px;
+}
+.posts{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.posts img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:#eef3f8;
+}
+
+.a{
+    display:flex;
+    gap:40px;
+}
+
+.post p{
+    color:#666;
+    font-size:16px;
+}
+.post h3{
+    color:#2a275f;
+    margin-top:5px;
+    font-size:28px;
+}
+
+.header{
+    margin-top:10px;
+    color:#2a275f;
+}
+.job{
+    margin-top:6px;
+    color:#666;
+    font-weight:normal;
+}
+.about{
+    margin-top:10px;
+    color:#2a275f;
+}
+
+.about-para{
+    margin-top:6px;
+    color:#888;
+    text-shadow: 1px 1px 2px skyblue, 0 0 1em #ee5a24;
+}
+
