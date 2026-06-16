@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime minister of india</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="pmindiawebsite12-6-26.css"> -->
+     <style>
+        body{
+    background:#d9d9d9;
+}
+
+.top-head{
+    background:gray;
+    color:white;
+    padding:8 20px;
+    display: flex;
+    align-items: center;
+    gap:100px;
+    font-size: 15px;
+   justify-items: center;
+   position:sticky;
+    top:0;
+    z-index:1000;
+}
+.left-side,
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.top-head a{
+    color: white;
+    text-decoration: none;
+}
+.top-header button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background:#6c77bb;
+    color:white
+
+}
+.dark{
+    background:white;
+    color:black;
+}
+
+.light{
+    background:black;
+    color:white;
+}
+.right-side i{
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+.right-side i:hover{
+    transform:scale(1.2);
+}
+.right-side input{
+    padding:5px 10px;
+    width:120px;
+}
+.language select{
+    border:none;
+    padding:4px;
+}
+header{
+    position:sticky;
+    top:25px;
+    z-index:999;
+}
+.main-header{
+    background:orange;
+    color:black;
+    padding:8 20px;
+    display: flex;
+    gap:900px;
+    font-size: 30px;
+   font-weight: bold;
+  
+     
+}
+.home{
+    font-size:20px;
+    font-weight: bold;
+}
+.home img{
+    font-size: 50px;
+}
+.home h2 {
+    /* display: flex; */
+    margin-top: -40px;
+    margin-left: 50px;
+    align-items: center;
+    color:black;
+    justify-items: center;  
+}
+.logo{
+    
+    position:absolute;
+    /* bottom:5px; */
+     width:450px;
+   margin-left: 20px;
+}
+.title{
+    display: flex;
+    margin-top:-40px;
+    margin-left: 60px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+.headline{
+    position: absolute;
+    bottom: 5px; 
+    right: 20px;
+    /* padding: 20px; */
+    background:rgba(0,0,0,.6) ;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+    max-width:500px;
+    margin-bottom: 30px;
+}
+.slide-img{
+    width:100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+    /* News section */
+.news-section{
+    width:100%;
+    margin:auto;
+    padding:20px 0;
+}
+.news-section h1{
+    text-align:center;
+    font-size:62px;
+    font-weight:600;
+    margin-bottom:30px;
+    margin-top: -5px;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px 50px;
+}
+
+.news-card{
+    display:flex;
+    gap:25px;
+    opacity:0;
+    transform:translateX(-150px);
+    animation:slideRight 1.2s ease forwards;
+}
+
+.news-card:nth-child(2){
+    animation-delay:.3s;
+}
+
+.news-card:nth-child(3){
+    animation-delay:.6s;
+}
+
+.news-card:nth-child(4){
+    animation-delay:.9s;
+}
+
+.news-image{
+    width:330px;
+    min-width:330px;
+    overflow:hidden;
+}
+
+.news-image img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.news-image:hover img{
+    transform:scale(1.08);
+}
+
+.news-content h2{
+    font-size:18px;
+   
+    color:#111;
+    margin-bottom:10px;
+    margin-top: -6px;
+}
+
+.date{
+    font-size:15px;
+    color:#444;
+    margin-bottom:10px;
+}
+
+.news-content p{
+    font-size:18px;
+    color:#555;
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform:translateX(-150px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@media(max-width:1200px){
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .news-section h1{
+        font-size:50px;
+    }
+}
+
+@media(max-width:768px){
+
+    .news-card{
+        flex-direction:column;
+    }
+
+    .news-image{
+        width:100%;
+        min-width:100%;
+    }
+
+    .news-section h1{
+        font-size:40px;
+    }
+}
+.news-btn{
+   align-items: center;
+   background-color: yellow;
+   text-decoration: none;
+   text-align: center;
+   justify-items: center;
+   color:black;
+   width: 100px;
+   height: 40px; 
+   margin-left: 550px; 
+   font-weight: bold;
+ 
+}
+/* GALLERY SECTION */
+
+.gallery-section{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    /* background:#3d3a3a; */
+}
+
+/* CARD */
+
+.media-card{
+    position:relative;
+    height:800px; 
+    overflow:hidden;
+    text-decoration:none;
+}
+.media-card img{
+    width:100%;
+    height:60%;   
+}
+/* HOVER EFFECT */
+
+ .media-card:hover img{
+    transform:scale(1.08);
+} 
+
+/* BUTTON */
+
+.btn{
+    position:absolute;
+    /* bottom:60px; */
+    left:20px;
+    margin-top: -120px;
+
+    background:#ffc800;
+    color:black;
+
+    padding:18px 35px;
+    font-size:22px;
+    font-weight:500;
+
+    transition:0.4s;
+}
+
+.media-card:hover .btn{
+    background:#ffb300;
+}
+   /* PM PROFILE */
+   .pm-section{
+    display:grid;
+    grid-template-columns:1fr 450px 1fr;
+    background:url("images/modi-bg.jpg");
+    /* min-height:750px; */
+}
+.left-box{
+    background:url("images/left-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+}
+.middle-box{
+    background:maroon;
+    padding:20px;
+    color:white;
+}
+.middle-box h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.middle-box1{
+    background:#3d414a;
+    padding:20px;
+    color:white;
+
+}
+.middle-box span{
+    font-weight:bold;
+}
+.pm-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    /* gap:10px; */
+}
+.pm-grid img{
+    width:100%;
+    height:65px;
+    object-fit:cover;
+}
+.right-sidecard{
+    /* background:url("images/modi-bg.jpg"); */
+    background-size:cover;
+    background-position:center;
+    /* top:50px; */
+
+    padding:50px;
+}
+
+      /* Pm iteract section */
+
+    .interact-section{
+    width:100%;
+    padding:40px 0 30px;
+    text-align:center;
+    background:#123c73;
+}
+
+.interact-section h1{
+    color:#fff;
+    font-size:65px;
+    font-weight:bold;
+    margin-bottom:30px;
+     background:#123c73;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:120px;
+}
+
+.card{
+    width:320px;
+    text-align:center;
+}
+
+.card img{
+    width:220px;
+    height:auto;
+    margin-bottom:15px;
+}
+
+.card p,
+.card a{
+    color:#fff;
+    font-size:20px;
+    /* line-height:1; */
+    text-decoration:none;
+    text-align: center;
+  
+}
+
+/* .bordered{
+    border:2px solid rgba(255,255,255,0.3);
+    padding:15px;
+} */
+
+.bordered a{
+    text-decoration:underline;
+} 
+
+/* Responsive */
+@media(max-width:768px){
+
+    .interact-section h1{
+        font-size:40px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+    }
+
+    .card p,
+    .card a{
+        font-size:20px;
+    }
+
+    .card img{
+        width:180px;
+    }
+}
+/* OUR GOVERNMENT */
+ 
+.government-sec{
+    width:100%;
+    padding:15px;
+}
+
+.government-section h1{
+    color:#fff;
+    text-align:center;
+   justify-content: center;
+    font-size:48px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.government-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2px;
+}
+
+.gov-card{
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.gov-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-title{
+    position:absolute;
+    bottom:8px;
+    left:8px;
+    background:#000;
+    color:#fff;
+    padding:4px 8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.gov-card:hover img{
+    transform:scale(1.05);
+    transition:0.4s;
+}
+
+@media(max-width:992px){
+    .government-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:576px){
+    .government-grid{
+        grid-template-columns:1fr;
+    }
+} 
+footer{
+    background:#30333b;
+    color:#d8d8d8;
+    padding:15px;
+    margin-top:20px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:15px;
+    font-size:18px;
+    text-align:center;
+}
+     </style>
+</head>
+<body>
+    <main id="main">
+     <!-- <div class="main"> -->
+      <div class="top-head">
+        <div class="left-side">
+            <a href="#main-content" class="skip-link">Skip to Main Content</a>
+            <button>A-</button>
+            <button>A</button>
+            <button>A+</button>
+            <button class="dark">A</button>
+            <button class="light">A</button>
+        </div>
+        <div class="right-side">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <input type="text" placeholder="Search">
+              <i class="fas fa-search"></i>
+             <i class="fas fa-sitemap"></i>
+
+            <span class="language">  Language
+            <select>
+                <option>English</option>
+                <option>Telugu</option>
+                <option>Hindhi</option>
+                <option>Marathi</option>
+                <option>Odia</option>
+                <option>Bengali</option>
+                <option>Kannada</option>
+                <option>Tamil</option>
+            </select>
+            </span>
+        </div>
+      </div>
+      <!-- navigations headers -->
+       <header>
+        <div class="main-header">
+            <div class="menu">☰ MENU</div>
+            <div class="home">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" height="40px" width="40px">
+             <h2> HOME</h2>
+            </div>
+
+        </div>
+       </header>
+       <!-- <main id="main"> -->
+        <section class="header-section">
+            <div class="logo">
+                 <img src="../Pmindiawebsiteusingcss/images/logo.png"  alt="PM">
+                 <div class="title">PM INDIA</div>
+            </div>
+           
+            <div class="slide-img">
+                <img src="../images/Homepage-PM-at-the-laying-of-foundation-stone-inauguration-and-dedication-to-the-nation-various-development-projects-in-Daman.jpg"
+                class="slide s1">
+                 <!-- <img src="../images/img1.jpg" class="slide s2">
+                 <img src="../images/img2.jpg" class="slide s3">
+                <img src="../images/img3.jpg" class="slide s4">
+               <img src="../Pmindiawebsiteusingcss/images/img4.jpg" class="slide s5">
+                <img src="../Pmindiawebsiteusingcss/images/img5.jpg" class="slide s6">
+                <img src="../Pmindiawebsiteusingcss/images/img6.jpg" class="slide s7">
+                <img src="../Pmindiawebsiteusingcss/images/img7.jpg" class="slide s8"> -->
+                </div>
+               
+         
+                 <div class="headline">
+            PM'S ADDRESS DURING DISTRIBUTION OF APPOINTMENT LETTERS
+        </div>
+            </div>
+            
+        </section>
+
+      <section class="news-section">
+
+    <h1>News Updates</h1>
+
+    <div class="news-grid">
+
+        <!-- News 1 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../Pmindiawebsiteusingcss/images/imgnews1.jpg" alt="">
+            </div>
+
+            <div class="news-content">
+                <h2>
+                    PM highlights the Government's strong push towards youth-led development and the
+                    emergence of a robust innovation ecosystem
+                </h2>
+
+                <div class="date">13 Jun, 2026</div>
+
+                <p>
+                    PM emphasizes the remarkable contributions of<br>
+                    Yuva Shakti across diverse sectors and their<br>
+                    growing impact on the global stage.
+                </p>
+            </div>
+        </div>
+
+        <!-- News 2 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../Pmindiawebsiteusingcss/images/imgnews2.jpg" alt="">
+            </div>
+
+            <div class="news-content">
+                <h2>
+                    PM’s Departure statement ahead of his visit
+                    to France and Slovakia
+                </h2>
+
+                <div class="date">13 Jun, 2026</div>
+
+                <p>
+                    At the invitation of H.E. Mr. Emmanuel Macron,
+                    President of the French Republic and H.E. Mr.
+                    Robert Fico, Prime Minister of the Slovak Republic...
+                </p>
+            </div>
+        </div>
+
+        <!-- News 3 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../Pmindiawebsiteusingcss/images/newsimg3.jpg" alt="">
+            </div>
+
+            <div class="news-content">
+                <h2>
+                    PM emphasizes the Government's efforts to
+                    further women-led development across sectors
+                </h2>
+
+                <div class="date">12 Jun, 2026</div>
+
+                <p>
+                    Prime Minister Shri Narendra Modi today stated
+                    that over the last 12 years the Government has
+                    focused on women empowerment.
+                </p>
+            </div>
+        </div>
+
+        <!-- News 4 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../Pmindiawebsiteusingcss/images/newsimg4.jpg" alt="image not found">
+            </div>
+
+            <div class="news-content">
+                <h2>
+                    PM expresses sadness over the passing of
+                    Shri Jaspal Rana Ji
+                </h2>
+
+                <div class="date">12 Jun, 2026</div>
+
+                <p>
+                    Prime Minister Shri Narendra Modi today
+                    expressed deep sadness over the passing of
+                    Shri Jaspal Rana Ji.
+                </p>
+            </div>
+        </div>
+       <a href=" https://www.pmindia.gov.in/en/news-updates/"  class="news-btn" >VIWE MORE</a>
+       <!-- <button class="news-btn" >VIWE MORE</button> -->
+
+    </div>
+
+</section>
+<!-- GALLERY SECTION -->
+ <section class="gallery-section">
+
+    <a href="https://www.pmindia.gov.in/en/image-gallery/" class="media-card gallery">
+        <img src="../Pmindiawebsiteusingcss/images/gallaryimg1.jpg" alt="">
+        <div class="btn">Photo Gallery ➜</div>
+    </a>
+
+    <a href="https://www.pmindia.gov.in/en/info-quotes/" class="media-card quotes">
+        <img src="../Pmindiawebsiteusingcss/images/galleryimg2.jpg" alt="">
+        <div class="btn">Quotes ➜</div>
+    </a>
+
+    <a href="https://www.pmindia.gov.in/en/speeches/" class="media-card videos">
+         <img src="../Pmindiawebsiteusingcss/images/gallaryimg3.jpg" alt="mage not found">
+        <div class="btn">Videos ➜</div>
+    </a>
+
+    <a href="https://www.pmindia.gov.in/en/tag/pmspeech/" class="media-card speeches">
+        <img src="../Pmindiawebsiteusingcss/images/galleryimg4.jpg" alt="image not found">
+        <div class="btn">PM's Speeches ➜</div>
+    </a>
+
+</section>
+         <!-- PM'S PROFILE -->
+<section class="pm-section">
+    
+        <div class="left-content">
+            <h1>Governance Track Record</h1>
+             <p>
+                Our Mantra should be: ‘Beta Beti, Ek Samaan’ "Let 
+                us celebrate the birth of the girl child. We should
+                be equally proud of our daughters. I urge you to 
+                sow five plants when your daughter is born to 
+                celebrate the occasion." -PM Narendra Modi to 
+                citizens of his adopted village Jayapur. Beti Bachao Beti Padhao (BBBP) was launched by the Prime Minister on 22nd January, 2015 at Panipat, Haryana. BBBP addresses the declining Child Sex Ratio (CSR) and related issues of women empowerment over a life-cycle continuum. It is a tri-ministerial effort of Ministries of Women and Child Development, Health & Family ...
+            </p>
+            <a href="https://www.pmindia.gov.in/en/governance-track-record/" class="view-btn">View More ➜</a>
+        </div>
+    
+    <div class="main-box">
+    <div class="middle-box">
+        <img src="images/PM.jpg" width="350px" height="200px">
+        <h3>Know the PM</h3>
+        <p>Dynamic,dedicated and determined, Narendra Modi arrives as a ray of hope in the lives of billion Indians</p>
+        <a href="https://www.pmindia.gov.in/en/pms-profile/" class="ReadMore">ReadMore ➜</a>
+    </div>
+    <div class="middle-box1">
+        <h2>FORMER<br><span>Prime Ministers</span></h2>
+         <div class="pm-grid">
+
+            <img src="images/pmprofileimg1.jpg">
+            <img src="images/profile2.jpg">
+            <img src="images/profile3.jpg">
+            <img src="images/profile3.jpg">
+            <img src="images/profile4.jpg">
+            <img src="images/profile5.jpg">
+            <img src="images/profile6.jpg">
+            <img src="images/profile7.jpg">
+            <img src="images/profile8.jpg">
+            <img src="images/profile9.jpg">
+            <img src="images/profile10.jpg">
+            <img src="images/profile11.jpg">
+            <img src="images/profile12.jpg">
+            <img src="images/profile13.jpg">
+            <img src="images/profile14.jpg">
+            <img src="images/profile15.jpg">
+            <img src="images/profile16.jpg">
+            <img src="images/profile17.jpg">
+
+            
+         </div>
+    </div>
+    </div>
+    <div class="right-sidecard">
+       
+        <h1>PM's Profile</h1>
+           
+        <p>Shri Narendra Modi was sworn-in as India’s Prime Minister for the third time on 9th June 2024, following another decisive victory in the 2024 Parliamentary elections. This victory marked the third consecutive term for Shri Modi, further solidifying his leadership. The 2024 elections saw a remarkable voter turnout, with a significant portion of the electorate showing continued confidence in Shri Modi’s leadership and vision for the country. His campaign focused on a blend of economic development, national security, and social welfare programs, which resonated widely with the populace. Shri Modi's third term is expected to build on the foundations laid during his ...</p>
+        <a href="https://www.pmindia.gov.in/en/pms-profile/" class="view-btn">View More ➜</a>
+       
+    </div>
+
+</section>
+
+
+<!-- <---pm;s section-->
+<section class="interact-section">
+    <h1>Interact with PM</h1>
+
+    <div class="cards">
+
+        <!-- Idea Card -->
+        <div class="card">
+            <img src="images/ico-idea.png" alt="MyGov">
+            <p>
+                Share your ideas,<br>
+                insights and thoughts
+            </p>
+        </div>
+
+        <!-- Write to PM Card -->
+        <div class="card bordered">
+            <img src="images/interact.png" alt="Write to PM">
+            <a href="write-to-pm.html">
+                Write to<br>
+                the Prime Minister
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- OUR Government -->
+
+
+<section class="government-sec">
+    <h1>OUR Government</h1>
+
+    <div class="government-grid">
+
+        <div class="gov-card">
+           <img src="images/gov1.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">The President of India</div>
+        </div>
+
+        <div class="gov-card">
+            <img src="images/gov2.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">Rajya Sabha</div>
+        </div>
+
+        <div class="gov-card">
+           <img src="images/gov3.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">Lok Sabha</div>
+        </div>
+
+        <div class="gov-card">
+            <img src="images/gov4.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">The Cabinet Secretariat</div>
+        </div>
+
+        <div class="gov-card">
+           <img src="images/gov5.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">MyGov</div>
+        </div>
+
+        <div class="gov-card">
+             <img src="images/gov6.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">GOI Web Directory</div>
+        </div>
+
+        <div class="gov-card">
+           <img src="images/gov7.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">Press Information Bureau</div>
+        </div>
+
+        <div class="gov-card">
+          <img src="images/gov8.jpg" alt="image" width="450px" height="300px">
+            <div class="card-title">National Portal of INDIA</div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>Content managed by Prime Minister's Office</p>
+        <p>Website designed, developed & hosted by National Informatics Centre</p>
+        <p>Home | Website Policies | Link to us | Help | Contact Us</p>
+    </div>
+</footer>
+
+    </main>
+
+</body>
+</html>
