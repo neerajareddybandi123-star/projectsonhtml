@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+ body{
+    font-family:Arial, sans-serif;
+    /* background:#b97c5e; */
+}
+
+.home{
+    position:relative;
+    width:100%;
+    /* height:100vh; */
+} 
+
+  .logo-img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+    display:block;
+}   
+
+/* Header */
+
+ header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:1100px;
+    z-index:100;
+    padding:25px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}  
+
+  .logo{
+    width:180px;
+}  
+
+  nav{
+    display:flex;
+    gap:70px;
+}  
+
+  nav a{
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:5px;
+    font-weight:600;
+}  
+
+nav .active{
+    color:#c28b66;
+}  
+
+ .icons{
+    display:flex;
+    align-items:center; 
+    gap:20px; 
+    font-size:22px;
+}  
+ 
+ .cart{
+    position:relative;
+} 
+
+.cart span{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#000;
+    color:#fff;
+    font-size:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}  
+
+/* Floating Right Box */
+
+.floating-box{
+    position:fixed;
+    right:0;
+    top:60%;
+    transform:translateY(-60%);
+}
+
+.demo-box{
+    width:230px;
+    height:95px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.demo-box h3{
+    font-size:52px;
+    color:#000;
+}
+
+.demo-box span{
+    font-size:20px;
+    line-height:1.1;
+}
+
+.buy-box{
+    width:230px;
+    height:90px;
+    background:#ff165d;
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact img{
+    width: 100%;
+    height: 400px;
+
+}
+ .contacts h1{
+    font-size:60px;
+    line-height:1.05;
+    font-family:Georgia, serif;
+    font-weight:400;
+    text-align: center;
+    margin-top: -280px;
+}
+.contacts p{
+    font-size:20px;
+    line-height:1.05;
+    font-style: italic;
+    font-weight:400;
+    text-align: center;
+    margin-top: -20px;
+    color:#b97c5e;
+
+} 
+/* section2 */
+.contact-section{
+    max-width:1400px;
+    margin:50px auto;
+    display:flex;
+    gap:45px;
+    align-items:flex-start;
+}
+
+.maps{
+    flex:1;
+   padding-top: 150px;
+}
+
+.maps iframe{
+    width:100%;
+    height:670px;
+    border:2px solid #2f80ed;
+}
+
+.contact-box{
+    flex:1;
+    padding-top: 120px;
+}
+
+.contact-box h1{
+    font-size:54px;
+    font-weight:300;
+    color:#222;
+    margin-bottom:35px;
+    font-family:Georgia, serif;
+}
+
+.contact-box p{
+    font-size:18px;
+    line-height:1.9;
+    color:#7d7d7d;
+    margin-bottom:50px;
+}
+
+.contact-box form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    border:1px solid #ddd;
+    padding:25px 35px;
+    font-size:18px;
+    outline:none;
+    background:#fff;
+}
+
+.contact-box textarea{
+    height:190px;
+    resize:none;
+}
+
+.contact-box button{
+    width:100%;
+    padding:24px;
+    border:none;
+    background:#b97c5a;
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    letter-spacing:3px;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.contact-box button:hover{
+    background:#a86f50;
+}
+ /* news letter section */
+
+
+  .news-letter{
+    position:relative;
+    width:100%;
+}
+
+.news-letter img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+}
+
+.image-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+}
+
+.image-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.image-content input{
+    padding:15px;
+    width:300px;
+    border:none;
+}
+
+.image-content button{
+    padding:15px 30px;
+    border:none;
+    background:white;
+    cursor:pointer;
+}
+ /* footer section */
+  .footer{
+    background:#f1ece6;
+    padding:100px 50px 25px;
+    font-family:Arial, sans-serif;
+}
+
+  .footer-content{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:50px;
+}   
+
+  .content-footer h3{
+    font-size:15px;
+    font-weight:400;
+    color:#111;
+     /* margin-bottom:40px;  */
+}   
+
+.content-footer ul{
+    list-style:none;
+}  
+ .content-footer ul li{
+    margin-bottom:8px;
+}  
+
+ .content-footer ul li a{
+    text-decoration:none;
+    color:#7f7f7f;
+    font-size:12px;
+}  
+
+ .content-footerul li a:hover{
+    color:#b97f5b;
+}  
+
+.footer-bottom{
+    margin-top:80px;
+    padding-top:30px;
+    border-top:1px solid #ddd5cd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}  
+
+ .footer-bottom p{
+    color:#7f7f7f;
+    font-size:10px;
+    margin-right:550px;
+} 
+
+  .payment-icons img{
+    max-width:160px;
+    text-align: center;
+    display: flex;
+}  
+
+ .social-links{
+    display:flex;
+    gap:50px;
+}  
+
+ .social-links a{
+    text-decoration:none;
+    color:#8a8a8a;
+    letter-spacing:2px;
+    font-size:14px;
+} 
+
+ .social-links a:hover{
+    color:#b97f5b;
+}  
+</style>
+</head>
+<body>
+  <header>
+    <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/logo.png" class="logo">
+
+    <nav>
+        <a href="bridgewebsite18-06-2-26.html" class="active">HOME</a>
+        <a href="bridgeabotpage.html">ABOUT</a>
+        <a href="bridgeshop.html">SHOP</a>
+        <a href="bridgecontact.html">CONTACT</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+        </div>
+    </div>
+</header>
+
+<!-- Floating Box -->
+<section>
+<div class="floating-box">
+
+    <div class="demo-box">
+        <h3>630+</h3>
+        <span>Bridge<br>demos</span>
+    </div>
+
+    <div class="buy-box">
+        🛍 BUY NOW $69
+    </div>
+
+</div>
+<section class="contact">
+   <img src="https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/about-title-image-1.jpg" alt="image not found">
+    <div class="contacts">
+        <h1>Contact us</h1>
+        <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+    </div>
+</section>
+
+<!-- section2 -->
+
+<section class="contact-section">
+    
+    <div class="maps">
+        <iframe
+            src="https://maps.google.com/maps?q=brooklyn&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="contact-box">
+        <h1>Get in Touch</h1>
+
+        <p>
+            Mei invenire periculis ei, offendit mediocrem ne sea,
+            eos suas elitr everti ea. Per vidit rebum quodsi id.
+            Pericula interpre.
+        </p>
+
+        <form>
+            <input type="text" placeholder="Your Full Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Write Something"></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+
+</section>
+<!-- Subscribe to Newsletter -->
+
+ <section class="news">
+    <div class="news-letter">
+    <img src="Images/home-gallery-1.jpg" alt="Gallery Image">
+
+    <div class="image-content">
+        <h1>Subscribe to Newsletter</h1>
+
+        <form>
+            <input type="email" placeholder="E-mail Address">
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+</div>
+</section>
+
+ <!-- Footer section -->
+       <section class="footer">
+        <div class="footer-content">
+            <div class="content-footer">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                <li><a href="https://bridge155.qodeinteractive.com/contact-us/">Help & Contact</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/contact-us/">Returns & Refunds</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/shop/">Online Stores</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/my-account/edit-account/">Terms & Conditions</a></li>
+            </ul>
+                
+            </div>
+            <div class="content-footer">
+            <h3>COMPANY</h3>
+                <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+             </div>
+              <div class="content-footer">
+                <h3>SOCIAL MEDIA</h3>
+                 <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Tumblr</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+              </div>
+              <div class="content-footer">
+                <h3>Archive</h3>
+                 <ul>
+                <li><a href="#">Clay</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Plaster</a></li>
+                <li><a href="#">Vision</a></li>
+            </ul>
+              </div>
+        </div>
+         <div class="footer-bottom">
+            <hr>
+           
+
+        <p>© Qode Interactive, All Rights Reserved</p>
+
+         <div class="payment-icons">
+            <img src="Images/footer-bottom-image-1.png" alt="image not found">
+        </div>
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">FACEBOOK</a>
+        </div>
+       </section>
+    
+</body>
+</html>
