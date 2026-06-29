@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .a{ 
+        display: flex;
+        gap: 20px;         
+        align-items: center;
+        }
+        .b{
+            border:1px solid blue;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            display: flex;
+        }
+        .b:hover{
+            background-color: black;
+            transition-duration:1s;
+            transition-delay:2s;
+            /* transition-timing-function: ease-in; */
+            transition-timing-function: ease;
+            /* transition-timing-function: ease-in-out; */
+            /* shorthand */
+           
+        }
+        .c{
+            border:1px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            display: flex;
+        }
+        .c:hover{
+            background-color: black;
+            transform: translateX(50px);
+            transition-duration:2s;
+             
+        }
+        .d{
+            border:1px solid lightblue;
+            height: 200px;
+            width: 190px;
+            background-color: red;
+            display: flex;
+        }
+        .d:hover{
+            background-color: yellow;
+            display: flex;
+            transform: translateY(80px);
+            transition-duration:2s;
+        }
+           /* scale */
+        .e{
+            border:1px solid lightblue;
+            height: 200px;
+            width: 190px;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .e:hover{
+            background-color:green ;
+            /* transform: scaleY(1.5); */
+            /* transform: scaleX(1.5); */
+            transform: scale3d(1.5 2, 3);
+            /* transition-duration: 3s; */
+            transform: rotate(30deg)scale3d(1.5,2,3);
+        }
+         .f{
+            border:1px solid lightblue;
+            height: 200px;
+            width: 190px;
+            background-color:pink;
+            display: flex;
+        }
+        .f:hover{
+            background-color: yellow;
+            display: flex;
+            transform-origin:left;
+            /* transform: rotateX(200deg); */
+            /* transform:skew(30deg); */
+            /* transform:skewX(30deg); */
+             transform:skew(30deg,40deg); 
+
+            transition-duration:2s;
+            transition-timing-function: linear;
+
+        }
+        .g{
+            border:1px solid lightblue;
+            height: 200px;
+            width: 190px;
+            background-color: rgb(226, 43, 214);
+            display: flex;
+        }
+        .g:hover{
+            background-color:green ;
+            /* transform: scaleY(1.5); */
+            /* transform: scaleX(1.5); */
+            /* transform: scale3d(1.5 2, 3); */
+            /* transition-duration: 3s; */
+              transform: matrix(1, 0, 0, 1, 100, 50); 
+             /* transform:translate(500px,200px);  */
+             /* transform-origin:right; */
+              /* transform:rotate(200deg);  */
+                transform-origin:left; 
+        }
+        .h{
+            border:1px solid blue;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            display: flex;
+        }
+        .h:hover{
+            background-color: black;
+            transition-duration:1s;
+            transition-delay:2s; 
+            transform-origin:right; 
+          
+           
+              /* transition-timing-function: ease-in-out; */
+         
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <div class="b">Hello</div>
+    <div class="c">Hi Hello</div>
+    <div class="d">Hi Hello</div>
+    <div class="e">Hello</div>
+    <div class="f">Hello</div>
+     <div class="g">Hello</div>
+    <div class="h">Hello</div>
+
+</div>
+   
+</body>
+</html>
