@@ -5,7 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .a{ 
+        .a{
+            display: flex;
+            gap:20px;
+            align-items: center;
+        }
+        .b{
+            border: 1px solid blue;
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+        }
+        .b:hover{
+            background-color:aquamarine;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            /* transition-timing-function: linear; */
+            transition-timing-function:ease-in;
+            
+            border-radius: 50%;
+        }
+        @media(max-width:400px)
+        {body
+            {background-color: blueviolet;}}
+        .c{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        .c:hover{
+            background-color: aqua;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            /* transform: translateX(100px); */
+             transform: translate(100px, 100px);
+        }
+        @media(max-width:400px)
+             {.c{background-color: green;}}
+        
+        .d{
+            border: 1px solid whitesmoke;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+
+        }
+        .d:hover{
+            background-color: blueviolet;
+            border-radius: 50%;
+            transition-delay: 2s;
+            transition-duration: 1s;
+            /* transform: skew(30deg); */
+            /* transform: skewX(30deg); */
+            transform: skewY(30deg);  
+        }
+        .e{
+            border: 1px solid bisque;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        .e:hover{
+            background-color: green;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transform: scale(1.5);
+            /* transform: scaleY(1.5);
+            transform: scaleX(1.5); */
+            /* transform: scale3d(1.5, 2 ,3); */
+        }
+        .f{
+            border:1px solid blue;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .f:hover{
+            background-color: brown;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            transform: rotate(360deg);
+            /* transform: rotateX(360deg); */
+             /* transform: rotateY(360deg); */
+        }
+        .a1{
+            display: flex;
+            gap: 20px;
+        }
+        .g{
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .g:hover{
+            background-color: aquamarine;
+            transition-duration: 2s;
+            transform: matrix(1, 0, 0, 1, 100, 50); 
+        }
+        .g:hover{
+            border:1px solid white;
+            background-color: green;
+            height: 200px;
+            width:200px;
+            transform: matrix(1, 0, 0, 1, 100, 50); 
+        }
+        .h{
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            background-color:palevioletred;
+        }
+        .h:hover{
+            background-color: lightgreen;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transform-origin: right;
+            transform: rotate(30deg)scale3d(1.5,2,3);
+        }
+    /* .a{ 
         display: flex;
         gap: 20px;         
         align-items: center;
@@ -21,10 +143,10 @@
             background-color: black;
             transition-duration:1s;
             transition-delay:2s;
-            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-in; 
             transition-timing-function: ease;
             /* transition-timing-function: ease-in-out; */
-            /* shorthand */
+            /* shorthand 
            
         }
         .c{
@@ -53,7 +175,7 @@
             transform: translateY(80px);
             transition-duration:2s;
         }
-           /* scale */
+           /* scale 
         .e{
             border:1px solid lightblue;
             height: 200px;
@@ -64,13 +186,14 @@
         .e:hover{
             background-color:green ;
             /* transform: scaleY(1.5); */
-            /* transform: scaleX(1.5); */
+            /* transform: scaleX(1.5); 
             transform: scale3d(1.5 2, 3);
-            /* transition-duration: 3s; */
+            /* transition-duration: 3s; 
             transform: rotate(30deg)scale3d(1.5,2,3);
         }
          .f{
             border:1px solid lightblue;
+            
             height: 200px;
             width: 190px;
             background-color:pink;
@@ -80,11 +203,11 @@
             background-color: yellow;
             display: flex;
             transform-origin:left;
-            /* transform: rotateX(200deg); */
+            border-radius: 50%;
+             transform: rotateX(200deg);
             /* transform:skew(30deg); */
             /* transform:skewX(30deg); */
-             transform:skew(30deg,40deg); 
-
+            /* transform:skew(30deg,40deg);  
             transition-duration:2s;
             transition-timing-function: linear;
 
@@ -98,47 +221,50 @@
         }
         .g:hover{
             background-color:green ;
+            border-radius: 50%;
             /* transform: scaleY(1.5); */
             /* transform: scaleX(1.5); */
             /* transform: scale3d(1.5 2, 3); */
-            /* transition-duration: 3s; */
+            /* transition-duration: 3s; 
               transform: matrix(1, 0, 0, 1, 100, 50); 
              /* transform:translate(500px,200px);  */
              /* transform-origin:right; */
-              /* transform:rotate(200deg);  */
+              /* transform:rotate(200deg);  
                 transform-origin:left; 
         }
         .h{
             border:1px solid blue;
+            border-radius: 50%;
             height: 200px;
             width: 200px;
             background-color: green;
             display: flex;
         }
         .h:hover{
-            background-color: black;
+            background-color:black;
             transition-duration:1s;
             transition-delay:2s; 
             transform-origin:right; 
-          
-           
-              /* transition-timing-function: ease-in-out; */
+            transform:skewX(30deg);
+/* transition-timing-function: ease-in-out; *
          
            
-        }
+        } */
     </style>
 </head>
 <body>
     <div class="a">
-    <div class="b">Hello</div>
-    <div class="c">Hi Hello</div>
-    <div class="d">Hi Hello</div>
-    <div class="e">Hello</div>
-    <div class="f">Hello</div>
-     <div class="g">Hello</div>
-    <div class="h">Hello</div>
-
+    <div class="b">ease-in</div>
+    <div class="c">translate</div>
+    <div class="d">skew</div>
+    <div class="e">scale</div>
+    <div class="f">Rotate</div>
+    
 </div>
+<div class="a1">
+  <div class="g">Matrix</div>
+  <div class="h">Scale3d</div>
+  </div>
    
 </body>
 </html>
