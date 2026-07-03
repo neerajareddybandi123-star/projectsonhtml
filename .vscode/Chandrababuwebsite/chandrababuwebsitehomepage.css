@@ -192,13 +192,11 @@ nav a{
 
 }
 
-/* Pause animation on hover */
-
 .news-sec:hover{
     animation-play-state:paused;
 }
 
-/* Responsive */
+
 
 @media(max-width:768px){
 

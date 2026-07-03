@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadrababuwebsite</title>
+    <link rel="stylesheet" href="chandrababuwebsitehomepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 100;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        header img {
+            margin-left: 40px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-left: 90px;
+        }
+
+        .btn-search {
+            width: 200px;
+            margin-left: 30px;
+            padding: 10px 20px;
+            border: none;
+            background: whitesmoke;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 49%;
+        }
+
+.category{
+    width:90%;
+    margin:40px auto;
+}
+.title{
+    text-align:center;
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:60px;
+    margin-left: 650px;
+}
+.category-sec{
+    display:flex;
+    justify-content:space-between;
+    gap:70px;
+}
+.content-left{
+    width:70%;
+}
+.gallary-img{
+    display:flex;
+    gap:40px;
+    margin-bottom:35px;
+}
+.post-img{
+    width:470px;
+}
+.post-img img{
+    width:100%;
+    display:block;
+}
+.img-content{
+    flex:1;
+}
+.img-content h2{
+    font-size:20px;
+    line-height:1.0;
+    margin-bottom:20px;
+    font-weight:800;
+    margin-right: -50px;
+}
+.img-content h2:hover{
+    color:red;
+}
+.img-content span{
+    display:block;
+    color:#777;
+    margin-bottom:20px;
+    font-size:18px;
+}
+.img-content p{
+    color:#666;
+    font-size:16px;
+    line-height:1.1;
+}
+hr{
+    margin:35px 0;
+    border:1px solid #ececec;
+}
+.Latest-Posts{
+    width:30%;
+}
+.latest-title{
+    font-size:25px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+.posts{
+    display:flex;
+    gap:20px;
+    padding:20px 0;
+    border-top:1px solid #ececec;
+}
+.posts img{
+    width:150px;
+    height:90px;
+    object-fit:cover;
+}
+.posts span{
+    color:#8ca0df;
+    font-size:18px;
+    font-weight:700;
+}
+.posts h4{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.0;
+}
+/* Footer section */
+.footer{
+    background:#000;
+    padding:20px 40px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    background:#333;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a i{
+    color:#fff;
+    font-size:24px;
+}
+
+.social-icons a img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social-icons a:hover{
+    background:#0b73d1;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-content a:last-child{
+    border-bottom: none;
+}
+.dropdown-content a:hover{
+    background-color: #f5c518;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+     
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png" width="70px" height="70px">
+        <nav>
+            <a href="chandrababuwebsite30-06-26.html">Home</a>
+            <a href="aboutpg.html">About</a>
+            <a href="Achivements.html">Achivements
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="leadership.html">Leadership
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="newspage.html">News
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+             <div class="dropdown">
+
+        <a href="#">GALLERY 
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+            <a href="photos.html">Photos</a>
+            <a href="videospage.html">Videos</a>
+        </div>
+
+    </div> 
+            <a href="#Awards">Awards
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#TDP">TDP
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#Resources">Resources
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#GFST">GFST
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            SEARCH
+        </button>
+
+    </header>
+    <!-- Category: Achivements -->
+     <section class="header">
+      <h1>category:</h1>
+      <h1 class="title">Category: News</h1>
+    </section>
+ 
+    
+       
+<section class="category">
+
+  
+
+     <div class="category-sec">
+
+        <div class="content-left">
+
+        
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/ncbn-takes-charge-as-cm-for-the-fourth-term-takes-up-skill-census/"
+                            target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-13-at-8.05.26-PM.jpeg"
+                                alt="image not found" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>
+                        NCBN takes charge as CM for the fourth term,
+                        takes up skill census
+                    </h2>
+                      <p>
+                        Chief Minister N Chandrababu Naidu took charge
+                        at the State Secretariat at 4.41 pm on Thursday.
+                        Soon after, he signed five files related to the key
+                        promises made to the people during the elections.
+                        The 74-year-old signed the files in the presence
+                        of the beneficiaries. However, an announcement
+                        on the allocation of portfolios is yet [...]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/chandrababu-naidu-sworn-in-andhra-pradesh-cm-for-the-fourth-term/">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-12-at-3.35.41-PM-1536x735.jpeg" 
+                            width="400px" height="300px" alt="image not found">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>
+                        Chandrababu Naidu sworn in Andhra Pradesh
+                        CM for the fourth term
+                    </h2>
+
+                     <p>
+                       Karishma Pranav Bhasvar | Mint | June 12, 2024 TDP supremo N 
+                       Chandrababu Naidu was sworn in as the Chief Minister of Andhra Pradesh for 
+                       the fourth term on June 12. Janasena chief and actor Pawan Kalyan also 
+                       took oath as a minister in his cabinet. The swearing-in ceremony was held at
+                        Gannavaram Mandal, Kesarapalli […]
+                    </p>
+
+                </div>
+
+            </div>
+              <div class="gallary-img">
+
+                <div class="post-img">
+                     <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM-800x534.jpeg" 
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                        <h2>TDP supremo N Chandrababu Naidu elected as NDA’s CM candidate in Andhra Pradesh</h2>
+
+                      <p>
+                        Express News Service | June 11, 2024 Former Chief Minister and TDP national president N Chandrababu Naidu has been elected as the Chief Ministerial candidate of the NDA, on Tuesday. Naidu will be sworn-in as the Chief Minister for the second time in the bifurcated Andhra Pradesh on Wednesday in the presence of Prime Minister […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+                      <div class="post-img">
+                        <a href="https://ncbn.info/chandrababu-naidu-carries-ramoji-raos-remains-as-media-baron-cremated/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/Screenshot-2024-06-09-181220.png"
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>Chandrababu Naidu Carries Ramoji Rao’s Remains As Media Baron Cremated</h2>
+
+                     <p>
+                      Indo-Asian News Service | June 09, 2024 Media baron Cherukuri Ramoji Rao was cremated with state honours at Ramoji Film City on Sunday. A contingent of Telangana police reversed their arms and then fired shots in the air as a mark of respect to the chairman of Ramoji Group of companies. Ramoji Rao’s son and […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+                       <div class="post-img">
+                        <a href="https://ncbn.info/n-chandrababu-naidu-return-of-the-kingmaker/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/N.-Chandrababu-Naidu-Return-of-the-kingmaker.jpg" 
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                    <h2>N. Chandrababu Naidu: Return of the kingmaker</h2>
+
+                     <p>
+                    Appaji Reddem | The Hindu | June 09, 2024 For Nara Chandrababu Naidu, the 74-year-old Telugu Desam Party (TDP) supremo, the 2024 elections brought a double victory. His party captured power in Andhra Pradesh by winning 135 seats in the 175-member Assembly and emerged as the second largest party in the National Democratic Alliance (NDA) […]
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr>
+             <div class="gallary-img">
+                       <div class="post-img">
+                        <a href="https://ncbn.info/chandrababu-naidu-swings-into-poll-mode-to-address-meetings-in-22-lok-sabha-segments/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-07-at-8.53.47-PM.jpeg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                    <h2>Chandrababu Naidu swings into poll mode, to address meetings in 22 Lok Sabha segments</h2>
+
+                    <p>
+                     Deccan Herald | January 2, 2024 Hyderabad: Telugu Desam Party (TDP) chief Nara Chandrababu Naidu, will be getting into poll mode. He would be reaching the people with a call ‘Raa-Kadaliraa’ from January 5 to 29. ‘‘Raa Kadaliraa’ will be the longest campaign that Naidu would undertake after he was released on bail. After spending […]
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr>
+             <div class="gallary-img">
+                      <div class="post-img">
+                        <a href="https://ncbn.info/chandrababu-naidu-gets-anticipatory-bail-in-irr-sand-mining-and-liquor-cases/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-10-at-3.47.06-PM-e1705123443885-800x534.jpeg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Chandrababu Naidu gets anticipatory bail in IRR, sand mining and liquor cases</h2>
+
+                    <p>
+                       The Hindu | January 11, 2024 Former Chief Minister and TDP national president N. Chandrababu Naidu on Wednesday got a major relief as the Andhra Pradesh High Court granted him anticipatory bail in the Amaravati Inner Ring Road alignment, sand mining and liquor scam cases. While pronouncing the orders in separate petitions, Justice T. Mallikarjuna […]
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+           <div class="gallary-img">
+                       <div class="post-img">
+                         <a href="https://ncbn.info/cyclone-michaung-ysrcp-govt-failed-to-prevent-large-scale-destruction-of-crops-alleges-chandrababu-naidu/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-08-at-4.57.37-PM.jpeg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Cyclone Michaung: YSRCP govt failed to prevent large-scale destruction of crops, alleges Chandrababu Naidu</h2>
+
+                    <p>
+                       M Sambasiva Rao | The Hindu | 8 December 2023 The YSR Congress Party (YSRCP) government in Andhra Pradesh has miserably failed in preventing the large-scale destruction of standing crops due to cyclone Michaung, alleges Telugu Desam Party (TDP) national president and former Chief Minister N. Chandrababu Naidu. Addressing a gathering during his visit to […]
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="gallary-img">
+                       <div class="post-img">
+                         <a href="https://ncbn.info/chandrababu-naidu-flags-serious-lapses-in-draft-electoral-rolls-in-andhra-pradesh/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-08-at-6.53.21-PM.jpeg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Chandrababu Naidu flags ‘serious lapses’ in draft electoral rolls in Andhra Pradesh</h2>
+                   <p>
+                     GVR Subba Rao | The Hindu | 8 December 2023 The Telugu Desam Party (TDP) has alleged that the names of deceased voters are still found In the draft electoral rolls. In a letter to Chief Electoral Officer M.K. Meena on December 8 (Friday), TDP national president N. Chandrababu Naidu said it was disturbing to […]
+                    </p>
+
+                </div>
+
+            </div>
+             <hr>
+            <div class="gallary-img">
+                     <div class="post-img">
+                         <a href="https://ncbn.info/rousing-reception-to-chandrababu-naidu-at-begumpet-airport-in-hyderabad/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-31-at-6.45.23-PM-scaled-e1698930773934-1536x809.jpeg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Rousing reception to Chandrababu Naidu at Begumpet airport in Hyderabad</h2>
+
+                    <p>
+                       The Hindu | Nov 1, 2023 Fifty-three days after being arrested for allegedly masterminding the skill development scam, former Chief Minister N. Chandrababu Naidu returned to Hyderabad on November 1 (Wednesday). Mr. Naidu reached Begumpet airport at 5 p.m., and from there proceeded to his residence in Jubilee Hills. A huge number of TDP workers […]
+                     
+                    </p>
+
+                </div>
+
+            </div>
+
+            </div>
+
+       
+
+        <div class="Latest-Posts">
+
+            <h2 class="latest-title">Latest Posts</h2>
+        
+            <div class="posts">
+
+            <a href="https://ncbn.info/ncbn-takes-charge-as-cm-for-the-fourth-term-takes-up-skill-census/" target="_blank">
+                <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-13-at-8.05.26-PM.jpeg"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       NCBN takes charge as CM for the fourth term, takes up skill census
+
+                </div>
+
+            </div>
+
+           <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-sworn-in-andhra-pradesh-cm-for-the-fourth-term/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-12-at-3.35.41-PM-1536x735.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       Chandrababu Naidu sworn in Andhra Pradesh CM for the fourth term
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-the-survivor-and-warrior/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Untitled-design-8.png"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>LEADERSHIP</span>
+
+                    <h4>
+                        Chandrababu Naidu, the survivor and warrior
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       TDP supremo N Chandrababu Naidu elected
+                     as NDA’s CM candidate in Andhra Pradesh
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-carries-ramoji-raos-remains-as-media-baron-cremated/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Screenshot-2024-06-09-181220.png"
+                        width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       Chandrababu Naidu Carries Ramoji Rao’s Remains As Media Baron Cremated
+                    </h4>
+
+                </div>
+
+            </div>
+             <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>Leadership</span>
+
+                    <h4>
+                      Chandrababu’s return to Andhra helm set to reignite Amaravati capital dream
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- footer section -->
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="copyright">
+            &copy; 2026 Copyright &copy; CBN 2025. All rights reserved.
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><img src="https://ncbn.info/wp-content/uploads/2022/11/icon_1.png" alt="Logo"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

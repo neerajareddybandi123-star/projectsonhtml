@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadrababuwebsite</title>
+    <link rel="stylesheet" href="chandrababuwebsitehomepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 100;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        header img {
+            margin-left: 40px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-left: 90px;
+        }
+
+        .btn-search {
+            width: 200px;
+            margin-left: 30px;
+            padding: 10px 20px;
+            border: none;
+            background: whitesmoke;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 49%;
+        }
+
+.category{
+    width:90%;
+    margin:40px auto;
+}
+.title{
+    text-align:center;
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:60px;
+    margin-left: 650px;
+}
+.category-sec{
+    display:flex;
+    justify-content:space-between;
+    gap:70px;
+}
+.content-left{
+    width:70%;
+}
+.gallary-img{
+    display:flex;
+    gap:40px;
+    margin-bottom:35px;
+}
+.post-img{
+    width:470px;
+}
+.post-img img{
+    width:100%;
+    display:block;
+}
+.img-content{
+    flex:1;
+}
+.img-content h2{
+    font-size:20px;
+    line-height:1.0;
+    margin-bottom:20px;
+    font-weight:800;
+    margin-right: -50px;
+}
+.img-content h2:hover{
+    color:red;
+}
+.img-content span{
+    display:block;
+    color:#777;
+    margin-bottom:20px;
+    font-size:18px;
+}
+.img-content p{
+    color:#666;
+    font-size:16px;
+    line-height:1.1;
+}
+hr{
+    margin:35px 0;
+    border:1px solid #ececec;
+}
+.Latest-Posts{
+    width:30%;
+}
+.latest-title{
+    font-size:25px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+.posts{
+    display:flex;
+    gap:20px;
+    padding:20px 0;
+    border-top:1px solid #ececec;
+}
+.posts img{
+    width:150px;
+    height:90px;
+    object-fit:cover;
+}
+.posts span{
+    color:#8ca0df;
+    font-size:18px;
+    font-weight:700;
+}
+.posts h4{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.0;
+}
+/* Footer section */
+.footer{
+    background:#000;
+    padding:20px 40px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    background:#333;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a i{
+    color:#fff;
+    font-size:24px;
+}
+
+.social-icons a img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social-icons a:hover{
+    background:#0b73d1;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-content a:last-child{
+    border-bottom: none;
+}
+.dropdown-content a:hover{
+    background-color: #f5c518;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+     
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png" width="70px" height="70px">
+        <nav>
+            <a href="chandrababuwebsite30-06-26.html">Home</a>
+            <a href="aboutpg.html">About</a>
+            <a href="Achivements.html">Achivements
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="leadership.html">Leadership
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="newspage.html">News
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+             <div class="dropdown">
+
+        <a href="#">GALLERY 
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+            <a href="photos.html">Photos</a>
+            <a href="videospage.html">Videos</a>
+        </div>
+
+    </div> 
+            <a href="#Awards">Awards
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#TDP">TDP
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#Resources">Resources
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#GFST">GFST
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </nav>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            SEARCH
+        </button>
+
+    </header>
+    <!-- Category: Achivements -->
+     <section class="header">
+      <h1>category:</h1>
+      <h1 class="title">Category:Photos</h1>
+    </section>
+ 
+    
+       
+<section class="category">
+
+  
+
+     <div class="category-sec">
+
+        <div class="content-left">
+
+        
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/release-of-india2047-document-in-visakhapatnam/"
+                            target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-15-at-8.12.50-PM-1-e1692141731299.jpeg"
+                                alt="image not found" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>
+                       Release of India@2047 Document in Visakhapatnam
+                    </h2>
+                      <p>
+                       Former chief minister and TD chief N. Chandrababu Naidu laid bare his five strategies on how India could lead the world economy by the year 2047 — marking the hundredth year of Independence. He released a document titled ‘India, Indians, Telugus Vision 2047’, in a park on Visakhapatnam Beach Road to mark Independence Day on August […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/chandrababu-in-student-days-at-sv-varsity/">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/08/img06.jpg" width="400px" height="300px" alt="image not found">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>
+                        Chandrababu in student days at SV Varsity
+                    </h2>
+
+                     <p>
+                       Chandrababu Naidu was an active student in his university days. He obtained his masters in economics from Sri Venkateswara University. During his years at the university, Naidu was prominent in student politics and played key role in student body elections. He also took serious interest in social issues of the region, which helped him make […]
+                    </p>
+
+                </div>
+
+            </div>
+              <div class="gallary-img">
+
+                <div class="post-img">
+                     <a href="https://ncbn.info/chandrababu-naidus-wedding-with-bhuvaneswari/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/08/img01.jpg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                        <h2>Chandrababu Naidu’s wedding with Bhuvaneswari</h2>
+
+                      <p>
+                       Nara Chandrababu Naidu married N.T. Rama Rao’s daugther Bhuvaneswari when he was Cinematography Minister in T Anjaiah’s cabinet. The marriage was solemnized in Madras on 10 September 1981. There were reportedly more politicians than film personalities at the wedding held at Kalaivanar Arangam on Mount Road. Chief Minister T. Anjaiah and former Union Home Minister […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+                      <div class="post-img">
+                        <a href="https://ncbn.info/andhra-pradesh-in-the-time-of-naidu/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/08/img02.jpg"
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>NCBN at Swearing-in Ceremony of NTR</h2>
+
+                     <p>
+                     The historic swearing-in ceremony of N.T. Rama Rao as the first non-Congress Chief Minister of Andhra Pradesh took place at Lal Bahadur Stadium on January 8, 1983 in Hyderabad. Nara Chandrababu Naidu, who lost as Congress candidate to TDP from Chandragiri, is seen at the function along with well-known actor Akkineni Nageswara Rao.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             
+
+            </div>
+
+       
+
+        <div class="Latest-Posts">
+
+            <h2 class="latest-title">Latest Posts</h2>
+        
+            <div class="posts">
+
+            <a href="https://ncbn.info/ncbn-takes-charge-as-cm-for-the-fourth-term-takes-up-skill-census/" target="_blank">
+                <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-13-at-8.05.26-PM.jpeg"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       NCBN takes charge as CM for the fourth term, takes up skill census
+
+                </div>
+
+            </div>
+
+           <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-sworn-in-andhra-pradesh-cm-for-the-fourth-term/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-12-at-3.35.41-PM-1536x735.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       Chandrababu Naidu sworn in Andhra Pradesh CM for the fourth term
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-the-survivor-and-warrior/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Untitled-design-8.png"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>LEADERSHIP</span>
+
+                    <h4>
+                        Chandrababu Naidu, the survivor and warrior
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       TDP supremo N Chandrababu Naidu elected
+                     as NDA’s CM candidate in Andhra Pradesh
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-carries-ramoji-raos-remains-as-media-baron-cremated/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Screenshot-2024-06-09-181220.png"
+                        width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       Chandrababu Naidu Carries Ramoji Rao’s Remains As Media Baron Cremated
+                    </h4>
+
+                </div>
+
+            </div>
+             <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>Leadership</span>
+
+                    <h4>
+                      Chandrababu’s return to Andhra helm set to reignite Amaravati capital dream
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- footer section -->
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="copyright">
+            &copy; 2026 Copyright &copy; CBN 2025. All rights reserved.
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><img src="https://ncbn.info/wp-content/uploads/2022/11/icon_1.png" alt="Logo"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

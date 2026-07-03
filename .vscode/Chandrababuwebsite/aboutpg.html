@@ -26,7 +26,7 @@ header{
 
 nav{
     display: flex;
-    gap:60px;
+    gap:30px;
 }
 nav a{
     text-decoration: none;
@@ -40,11 +40,13 @@ nav a{
 .icons{
     display:flex;
     align-items:center; 
-    gap:50px; 
+    gap:30px; 
     font-size:18px;
     margin-left:20px;
+    margin-left: 90px;
 }  
 .btn-search{
+    width: 200px;
     margin-left:30px;
     padding:10px 20px;
     border:none;
@@ -52,20 +54,148 @@ nav a{
     color:black;
     font-weight:bold;
     cursor:pointer;
-    border-radius: 30%;
+    border-radius: 49%;
+}
+
+    /* about section2 introduction */
+    
+.about{
+    width:100%;
+    height:220px;
+    background:linear-gradient(to right,#f57c00,#ffca28);
+    display:flex;
+    justify-content:center;
+     align-items:center;
+    /* justify-items: center; */
+    /* bottom:10px; */
+    text-align: center;
+}
+.about h1{
+    font-size:60px;
+    font-weight:800;
+    color:#000;
+   margin-bottom: -28px;
+}
+.about-sec{
+    width:100%;
+    margin:60px auto;
+    display:flex;
+    justify-content:space-between;
+   
+}
+.left-content{
+    width:310px;
+}
+.menu{
+    display:block;
+    text-decoration:none;
+    background:#edf3f9;
+    color:#000;
+    font-size:18px;
+    font-weight:700;
+    padding:18px 30px;
+    margin-bottom:20px;
+}
+.menu:hover{
+    background:#064d05;
+    color:#fff;
+}
+.about-content{
+    width:72%;
+}
+.about-content h2{
+    font-size:24px;
+    font-weight:800;
+    /* margin-bottom:25px; */
+    line-height:1.2;
+}
+
+.about-content p{
+    font-size:18px;
+    color:#333;
+    line-height:1.2;
+    /* margin-bottom:20px; */
+}
+
+  /* Footer section */
+.footer{
+    background:#000;
+    padding:20px 40px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    background:#333;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a i{
+    color:#fff;
+    font-size:24px;
+}
+
+.social-icons a img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social-icons a:hover{
+    background:#0b73d1;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.footer-content{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
 }
     </style>
 </head>
 
 <body>
    <header>
-    <img src="Images/image.png"  width="70px" height="70px">
+    <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png"  width="70px" height="70px">
     <nav>
         <a href="chandrababuwebsite30-06-26.html">Home</a>
         <a href="aboutpg.html">About</a>
-        <a href="#Achivements">Achivements</a>
+        <a href="Achivements.html">Achivements</a>
         <a href="#Leadership">Leadership</a>
-        <a href="#News">News</a>
+        <a href="newspage.html">News</a>
         <a href="#Gallery">Gallery</a>
         <a href="#Awards">Awards</a>
         <a href="#TDP">TDP</a>
@@ -87,9 +217,65 @@ nav a{
    <section class="about">
       <h1>Introduction</h1>
       </section>
-    <div class="intro">
-       
+    <section class="about-sec">
+        <div class="left-content">
+            <a href="https://ncbn.info/introduction/" class="menu active">INTRODUCTION</a>
+            <a href="https://ncbn.info/journey/" class="menu green">CBN'S JOURNEY</a>
+            <a href="https://ncbn.info/milestones/" class="menu">MILESTONES</a>
+            <a href="https://ncbn.info/brief-biography/" class="menu">BRIEF BIOGRAPHY</a>
+        </div>
+        <div class="about-content">
+            <h2>
+            Nara Chandrababu Naidu is one of the most recognized and admired politicians not only in India but across the world for his visionary leadership and modern approach to governance.
+        </h2>
+
+        <p>
+            He was born to a farming family in a small village near Tirupati in what is now southeastern Andhra Pradesh.
+        </p>
+         <p>
+            Though he hailed from humble beginnings, Naidu showed his inclination towards political leadership very early. He became an MLA in 1978 at the age of 28 and since then did not look back.
+        </p>
+
+        <p>
+            He played a key role in building the Telugu Desam Party, founded by his father-in-law N.T. Rama Rao. Soon he came into his own, working towards lifting millions of people out of poverty through reforms.
+        </p>
+
+        <p>
+            Known for embracing technology to make governance people-friendly, he has been a pioneer in furthering the knowledge economy in the country, benefiting many generations of young men and women.
+        </p>
+
+        <p>
+            At 73, his hunger for knowledge and enthusiasm to catch up with the latest trends in the world of polity and economy is insatiable.
+        </p>
+
+        <p>
+        </div>
+    </section>
+      <!-- footer section -->
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="copyright">
+            &copy; 2026 Copyright &copy; CBN 2025. All rights reserved.
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><img src="https://ncbn.info/wp-content/uploads/2022/11/icon_1.png" alt="Logo"></a>
+
+        </div>
+
     </div>
+
+</footer>
+
    
    
 
