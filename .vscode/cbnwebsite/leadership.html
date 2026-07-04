@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadrababuwebsite</title>
+    <link rel="stylesheet" href="chandrababuwebsitehomepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+nav{
+    display: flex;
+    gap:60px;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+}
+  header img {
+    margin-left: 40px;
+}   
+.icons{
+    display:flex;
+    align-items:center; 
+    gap:50px; 
+    font-size:18px;
+    margin-left:20px;
+}  
+.btn-search{
+    margin-left:30px;
+    padding:10px 20px;
+    border:none;
+    background:whitesmoke;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius: 30%;
+}
+
+/* .btn-search i{
+    margin-right:6px;
+}  */
+  
+     /* Home section */
+
+.home-sec{
+    position:relative;
+    width:100%;
+    height:100vh;
+    margin-top:90px;
+
+}
+.home-sec img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.img-over{
+    position:absolute;
+    inset:0;
+    background:rgba(0,60,35,.55);
+}
+.content{
+    position:absolute;
+    right:100px;
+    top:100px;
+}
+.content h1{
+    color:#f7c600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.content p{
+    color:white;
+    font-size:18px ;
+    line-height:1.2;
+
+}
+.btn-class{
+    display:inline-block;
+    border: 1px solid #f7c600;
+    color:#f7c600;
+    text-decoration:none;
+    padding:15px 35px;
+    font-weight:bold;
+}
+.title{
+    text-align:center;
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:60px;
+    margin-left: 550px;
+}
+
+.category{
+    width:90%;
+    margin:40px auto;
+}
+.title{
+    text-align:center;
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:60px;
+    margin-left: 550px;
+}
+.category-sec{
+    display:flex;
+    justify-content:space-between;
+    gap:70px;
+}
+.content-left{
+    width:70%;
+}
+.gallary-img{
+    display:flex;
+    gap:40px;
+    margin-bottom:35px;
+}
+.post-img{
+    width:470px;
+}
+.post-img img{
+    width:100%;
+    display:block;
+}
+.img-content{
+    flex:1;
+}
+.img-content h2{
+    font-size:20px;
+    line-height:1.0;
+    margin-bottom:20px;
+    font-weight:800;
+    margin-right: -50px;
+}
+.img-content h2:hover{
+    color:red;
+}
+.img-content span{
+    display:block;
+    color:#777;
+    margin-bottom:20px;
+    font-size:18px;
+}
+.img-content p{
+    color:#666;
+    font-size:16px;
+    line-height:1.1;
+}
+hr{
+    margin:35px 0;
+    border:1px solid #ececec;
+}
+.Latest-Posts{
+    width:30%;
+}
+.latest-title{
+    font-size:25px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+.posts{
+    display:flex;
+    gap:20px;
+    padding:20px 0;
+    border-top:1px solid #ececec;
+}
+.posts img{
+    width:150px;
+    height:90px;
+    object-fit:cover;
+}
+.posts span{
+    color:#8ca0df;
+    font-size:18px;
+    font-weight:700;
+}
+.posts h4{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.0;
+}
+/* Footer section */
+.footer{
+    background:#000;
+    padding:20px 40px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    color:#fff;
+    font-size:18px;
+    font-weight:500;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    background:#333;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a i{
+    color:#fff;
+    font-size:24px;
+}
+
+.social-icons a img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.social-icons a:hover{
+    background:#0b73d1;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-content a:last-child{
+    border-bottom: none;
+}
+.dropdown-content a:hover{
+    background-color: #f5c518;
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+</style>
+
+<body>
+   <header>
+    <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png" width="70px" height="70px">
+        <nav>
+            <a href="chandrababuwebsite30-06-26.html">Home</a>
+            <a href="aboutpg.html">About</a>
+            <a href="Achivements.html">Achivements
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="leadership.html">Leadership
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="newspage.html">News
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+             <div class="dropdown">
+
+        <a href="#">GALLERY 
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+            <a href="photos.html">Photos</a>
+            <a href="videospage.html">Videos</a>
+        </div>
+
+    </div> 
+            <a href="#Awards">Awards
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#TDP">TDP
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#Resources">Resources
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#GFST">GFST
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </nav>
+     <div class="icons">
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-linkedin-in"></i>
+     </div>
+       <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            SEARCH
+        </button>
+
+   </header>
+   <section>
+    <h1>Category: Leadership</h1>
+      <h1 class="title">Category: Leadership</h1>
+        
+   </section>
+         
+<section class="category">
+
+  
+
+     <div class="category-sec">
+
+        <div class="content-left">
+
+        
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/chandrababu-naidu-the-survivor-and-warrior/"
+                            target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/Untitled-design-8.png"
+                                alt="image not found" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                        <h2>
+                        Chandrababu Naidu, the survivor and warrior
+                    </h2>
+                    <p>
+                    S Viswanath | The New Indian Express | June 05, 2024 When the TDP
+                    suffered a drubbing in the 2019 elections as it won only 23 Assembly seats
+                    out of the total 175, and going by the age of party supremo N Chandrababu
+                    Naidu it was assumed to be practically impossible to bring back the […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+
+                <div class="post-img">
+                    <a href="https://ncbn.info/chandrababus-return-to-andhra-helm-set-to-reignite-amaravati-capital-dream/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2024/06/Screenshot-2024-06-09-175500.png" 
+                            width="400px" height="300px" alt="image not found">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2> Chandrababu’s return to Andhra helm set to reignite Amaravati capital dream </h2>
+
+                     <p>
+                       Karishma Pranav Bhasvar | Mint | June 12, 2024 TDP supremo N 
+                       Chandrababu Naidu was sworn in as the Chief Minister of Andhra Pradesh for 
+                       the fourth term on June 12. Janasena chief and actor Pawan Kalyan also 
+                       took oath as a minister in his cabinet. The swearing-in ceremony was held at
+                        Gannavaram Mandal, Kesarapalli […]
+                    </p>
+
+                </div>
+
+            </div>
+              <div class="gallary-img">
+
+                <div class="post-img">
+                     <a href="https://ncbn.info/open-sky-policy-naidus-dreams-wait-in-the-wings/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/09/cbn-with-jaswant-singh.jpg" 
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                        <h2>Open Sky Policy: Naidu’s dreams wait in the wings</h2>
+
+                      <p>
+                       Rediff.com | January 10, 2003 The dream of Chief Minister N Chandrababu Naidu to transform Hyderabad into the transit hub for air travellers between the west and the east would be realised when the Centre takes a decision on a new open sky policy. The Union Finance Minister, Jaswant Singh, indicated at the CII’s Partnership […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+                      <div class="post-img">
+                        <a href="https://ncbn.info/tdp-had-to-walk-out-of-nda-only-over-special-category-status-issue-says-chandrababu-naidu/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/08/cbn-e1693536343574-1024x591.jpg"
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                         <h2>TDP had to walk out of NDA only over Special Category Status issue, says Chandrababu Naidu</h2>
+
+                     <p>
+                    GVR Subba Rao | The Hindu | 29 August 2023 Telugu Desam Party (TDP) national president and former Andhra Pradesh Chief Minister of N. Chandrababu Naidu has dropped enough hints that his party is keen on forging an alliance with the Bharatiya Janata Party (BJP) in the 2024 general elections. In an informal interaction with […]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+             <div class="gallary-img">
+                       <div class="post-img">
+                        <a href="https://ncbn.info/chandrababu-naidu-at-isbs-20-year-celebrations/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/08/CBN-at-ISB-e1692806188584.jpeg" 
+                            width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                    <h2>Chandrababu Naidu at ISB’s 20-year Celebrations</h2>
+
+                     <p>
+                    ISB Marcomm | Dec 16, 2022 Creating something out of nothing is the greatest lesson that former Andhra Pradesh Chief Minister Chandrababu Naidu can impart best. And he did just that at the closing of the 20-year celebration of the Indian School of Business. The next thing that Mr Naidu excels in is his vision […]
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr>
+             <div class="gallary-img">
+                       <div class="post-img">
+                        <a href="https://ncbn.info/chandrababu-naidu-releases-vision-2047-document-says-5-strategies-can-make-india-a-global-leader/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2023/08/cbn-vision-document.jpg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                    <h2>Chandrababu Naidu releases Vision 2047 document, says 5 strategies can make India a global leader</h2>
+
+                    <p>
+                    SNV Sudhir | South First | August 15, 2023 TDP chief Nara Chandrababu Naidu said on Tuesday, 15 August, that he strongly believed that India could lead the world while the Telugus would play a major role in global development if five strategies were adopted. Unveiling his “Vision 2047” document in the presence of youngsters, […]
+                    </p>
+
+
+                </div>
+
+            </div>
+            <hr>
+             <div class="gallary-img">
+                      <div class="post-img">
+                        <a href="https://ncbn.info/biotechnology-policy-2015-20-under-cbn-government/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/11/biotech-1.png" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Biotechnology Policy 2015-20 under CBN government</h2>
+
+                    <p>
+                       Biotechnology Policy 2015-20 | Chief Minister Chandrababu Naidu Government of Andhra Pradesh has identified biotechnology as a key thrust sector for industrial development. The sector has tremendous potential to build robust knowledge base and foster innovation, research and development. Biotechnology Policy 2015-20 aims to enhance competitiveness of the sector and make Andhra Pradesh one of […]
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+           <div class="gallary-img">
+                       <div class="post-img">
+                         <a href="https://ncbn.info/keep-learning-you-can-do-wonders-chandrababu-to-ias-officers/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/11/CBN-addressing-IAS-officers.jpg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Keep learning, you can do wonders: Chandrababu to IAS officers</h2>
+
+                    <p>
+                       PTI | 26 Sep, 2017 Addressing senior IAS officers, who had gathered at the prestigious Lal Bahadur Shastri National Academy of Administration in Mussoorie near Dehradun, he said he still considers himself as a student. “Those who can learn continuously can do wonders…I learn from society, common man and administrators like you,” Naidu told the […]
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="gallary-img">
+                       <div class="post-img">
+                         <a href="https://ncbn.info/blockchain-technology-has-potential-to-create-wonders-cm-naidu/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/10/Chandrababu-Naidu-on-Blockchain-Technology.jpg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Blockchain technology has potential to create wonders: CM Naidu</h2>
+                   <p>
+                     ANI | October 9, 2017 Blockchain technology is the real future for the safety of any transaction, said Andhra Pradesh Chief Minister Nara Chandrababu Naidu while addressing the International Blockchain Business Conference in Visakhapatnam on Monday. The Chief Minister inaugurated a two-day international Blockchain Business Conference starting today by lighting the lamp in Visakhapatnam. FinTech […]
+                    </p>
+
+                </div>
+
+            </div>
+             <hr>
+            <div class="gallary-img">
+                     <div class="post-img">
+                         <a href="https://ncbn.info/cbn-thoughts-title/" target="_blank">
+                            <img src="https://ncbn.info/wp-content/uploads/2022/08/item01.jpg" width="400px" height="300px">
+                        </a>
+                </div>
+
+                 <div class="img-content">
+                     <h2>Political Consensus on Major Reforms Needed</h2>
+
+                    <p>
+                       We must have political consensus on major reforms agenda cutting across party lines Speech of Shri N. Chandrababu Naidu, Chief Minister, Andhra Pradesh at the 50th National Development Council Meeting on 21st December 2002 at New Delhi Honourable Prime Minister, Deputy Chairman of the Planning Commission, Union Cabinet Ministers, Colleague Chief Ministers and friends. Let […]
+                     
+                    </p>
+
+                </div>
+
+            </div>
+
+            </div>
+
+       
+
+        <div class="Latest-Posts">
+
+            <h2 class="latest-title">Latest Posts</h2>
+        
+            <div class="posts">
+
+            <a href="https://ncbn.info/ncbn-takes-charge-as-cm-for-the-fourth-term-takes-up-skill-census/" target="_blank">
+                <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-13-at-8.05.26-PM.jpeg"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       NCBN takes charge as CM for the fourth term, takes up skill census
+
+                </div>
+
+            </div>
+
+           <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-sworn-in-andhra-pradesh-cm-for-the-fourth-term/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-12-at-3.35.41-PM-1536x735.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>ACHIEVEMENTS</span>
+
+                    <h4>
+                       Chandrababu Naidu sworn in Andhra Pradesh CM for the fourth term
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-the-survivor-and-warrior/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Untitled-design-8.png"
+                     width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>LEADERSHIP</span>
+
+                    <h4>
+                        Chandrababu Naidu, the survivor and warrior
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       TDP supremo N Chandrababu Naidu elected
+                     as NDA’s CM candidate in Andhra Pradesh
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <div class="posts">
+
+                <a href="https://ncbn.info/chandrababu-naidu-carries-ramoji-raos-remains-as-media-baron-cremated/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/Screenshot-2024-06-09-181220.png"
+                        width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>NEWS</span>
+
+                    <h4>
+                       Chandrababu Naidu Carries Ramoji Rao’s Remains As Media Baron Cremated
+                    </h4>
+
+                </div>
+
+            </div>
+             <div class="posts">
+
+               <a href="https://ncbn.info/tdp-supremo-n-chandrababu-naidu-elected-as-ndas-cm-candidate-in-andhra-pradesh/" target="_blank">
+                    <img src="https://ncbn.info/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-11-at-2.05.11-PM.jpeg"
+                    width="100px" height="100px"></a>
+
+                <div>
+
+                    <span>Leadership</span>
+
+                    <h4>
+                      Chandrababu’s return to Andhra helm set to reignite Amaravati capital dream
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- footer section -->
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="copyright">
+            &copy; 2026 Copyright &copy; CBN 2025. All rights reserved.
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><img src="https://ncbn.info/wp-content/uploads/2022/11/icon_1.png" alt="Logo"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+   </body>
+   </html>
