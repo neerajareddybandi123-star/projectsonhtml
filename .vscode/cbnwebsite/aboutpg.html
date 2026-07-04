@@ -26,7 +26,7 @@ header{
 
 nav{
     display: flex;
-    gap:30px;
+    gap:20px;
 }
 nav a{
     text-decoration: none;
@@ -40,13 +40,12 @@ nav a{
 .icons{
     display:flex;
     align-items:center; 
-    gap:30px; 
+    gap:40px; 
     font-size:18px;
     margin-left:20px;
-    margin-left: 90px;
+    margin-top: -10px;
 }  
 .btn-search{
-    width: 200px;
     margin-left:30px;
     padding:10px 20px;
     border:none;
@@ -55,7 +54,11 @@ nav a{
     font-weight:bold;
     cursor:pointer;
     border-radius: 49%;
+    width: 220px;
+    /* margin-top: -20px; */
+    margin-bottom: -20px;
 }
+
 
     /* about section2 introduction */
     
@@ -184,31 +187,88 @@ nav a{
 }
 
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-content a:last-child{
+    border-bottom: none;
+}
+.dropdown-content a:hover{
+    background-color: #f5c518;
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
     </style>
 </head>
 
 <body>
    <header>
     <img src="https://ncbn.info/wp-content/uploads/2022/08/logo.png"  width="70px" height="70px">
-    <nav>
-        <a href="chandrababuwebsite30-06-26.html">Home</a>
-        <a href="aboutpg.html">About</a>
-        <a href="Achivements.html">Achivements</a>
-        <a href="leadership.html">Leadership</a>
-        <a href="newspage.html">News</a>
-        <a href="#Gallery">Gallery</a>
-        <a href="#Awards">Awards</a>
-        <a href="#TDP">TDP</a>
-        <a href="#Resources">Resources</a>
-        <a href="#GFST">GFST</a>
-    </nav>
+   <nav>
+            <a href="chandrababuwebsite30-06-26.html">Home</a>
+            <a href="aboutpg.html">About</a>
+            <a href="Achivements.html">Achivements
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="leadership.html">Leadership
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="newspage.html">News
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+             <div class="dropdown">
+
+        <a href="#">GALLERY 
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+            <a href="photos.html">Photos</a>
+            <a href="videospage.html">Videos</a>
+        </div>
+
+    </div> 
+            <a href="https://ncbn.info/category/awards/">Awards
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="https://ncbn.info/category/tdp/">TDP
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#Resources">Resources
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <a href="#GFST">GFST
+                 <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </nav>
      <div class="icons">
            <i class="fab fa-facebook-f"></i>
            <i class="fab fa-twitter"></i>
            <i class="fab fa-linkedin-in"></i>
      </div>
        <button class="btn-search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass"></i> 
             SEARCH
         </button>
 
