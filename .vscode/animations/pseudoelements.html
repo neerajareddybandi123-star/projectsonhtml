@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelements</title>
+    <style>
+            header{
+            display: flex;
+            /* position: fixed; */
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: green;
+            text-align: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            gap:100px;
+            margin-left: 200px;
+            
+        }
+        nav a{
+            color:black;
+        }
+        header h2{
+            margin-left: 80px;
+        }
+        .ele h1{
+            color:aqua;
+
+        }
+        .para p{
+            margin-left: 100px;
+            font-size: 18px;
+        }
+        h2::before{
+            content:">>";
+            color:blue;
+        }
+        p::first-letter{
+            content:">>";
+            color:blue;
+        }
+        .elements::first-line{
+            color:blue;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CSS TutorialSpot</h2>
+        <nav>
+            <a href="#Basic CSS">Basic CSS</a>
+            <a href="pseudoelements.html">Pseudo-Elements</a>
+            <a href="#Animations">Animations </a>
+            <A href="#Transactions">Transactions</A>
+            <a href="#more">More</a>
+        </nav>
+    </header>
+    
+    <div class="ele">
+        <h1>Pseudo Elements</h1>
+        <p>A pseudo-element is a special CSS keyword that lets you style a specific part of an HTML element or add virtual content without changing the HTML code.</p>
+        <h1>Types of Pseudo-elements</h1>
+        <p class="para">1.::before    :Inserts content before an element</p>
+        <p >2.::after      :Inserts content after an element</p>
+        <p class="para">3.::first-letter   :Styles the first letter of text</p>
+        <p class="para">4.::first-line     :Styles the first line of text</p>
+        <p class="para">5.::selection      :Styles selected (highlighted) text</p>
+        <p class="para">6.::placeholder :Styles the placeholder text in input fields</p>
+        
+    </div>
+    <section class="exp">
+        <div class="exp1">
+           <h2>Hello</h2>
+           <p> hello</p>
+
+        </div>
+        <div class="elements">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aspernatur consequatur accusamus vitae sequi qui quo eum totam, tempore, reprehenderit commodi. Ad minima omnis distinctio esse nulla velit nam ipsa.</p>
+        </div>
+    </section>
+    
+</body>
+</html>

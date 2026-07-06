@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        header{
+            display: flex;
+            /* position: fixed; */
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: green;
+            text-align: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            gap:100px;
+            margin-left: 200px;
+            
+        }
+        nav a{
+            color:black;
+        }
+        header h2{
+            margin-left: 80px;
+        }
+        .home h1{
+             position: relative;
+             animation: slideIn 3s ease forwards;
+             margin-left: 500px;
+             color:green;
+             font-size: 35px;
+
+        }
+          /* use in transulate h1 tag*/
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(300px);
+            }
+
+            to {
+                 transform: translateX(0);
+            }
+}
+        /* .home-sec p{
+            margin-left: 200px;
+        } */
+        .home-sec ul{
+            margin-left:100px;
+            line-height: 1.5;
+            /* animation: colorChange 4s infinite; */
+            animation: colorChange 4s 4; 
+        }
+        .p{
+            margin-left: 450px;
+            font-style: italic;
+           font-weight: bold;
+           animation: colorChange 4s 4; 
+
+        }
+        .home-sec ul:hover {
+           animation-play-state: paused;
+    }
+
+           /* keyframes */
+           @keyframes colorChange {
+            0%{
+                color:red;
+            }
+            25%{
+                color:green;
+            }
+            50%{
+                color:lightblue;
+            }
+            75%{
+                color:orange;
+
+            }
+            100%{
+                color:blue;
+            }
+           }
+
+        .home-sec ol{
+            margin-left: 480px;
+            line-height: 1.5;
+            animation: colorChange 4s 4; 
+        }
+        .sec-home h3{
+            margin-left: 120px;
+            animation: colorChange 4s 4; 
+        }
+        .sec-home ul{
+            margin-left: 120px;
+            line-height: 1.6;
+            animation: colorChange 4s 4; 
+        }
+        .syntax{
+            background-color: lightgray;
+           
+
+        }
+        .syntax h2{
+            color:green;
+            margin-left: 450px;
+            font-size: 35px;
+           
+
+        }
+        .frames p{
+            font-size: 20px;
+            display: flex;
+            margin-left: 100px;
+            line-height: 1.6;
+        }
+        .key-frames{
+            display: flex;
+            gap:150px;
+        }
+        .key-frames p{
+            font-size: 20px;
+            line-height: 1.6;
+        }
+         /* examples */
+        .exp h1{
+            color:blue;
+            margin-left: 300px;
+        }
+        .exp-key{
+            display: flex;
+        }
+        .box{
+            width: 550px;
+            height: 150px;
+            background-color: lightblue;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 30px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeSlideUp 3s linear infinite;
+        }
+        @keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animations-exp h3{
+    font-size: 25px;
+    color:skyblue;
+}
+.animations-exp p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 2px solid #333;
+            border-radius: 50%;
+            animation:lefTtoRight 2s ease-in-out 4s infinite;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 30px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            top:-400px;
+            
+        }
+        @keyframes lefTtoRight {
+            0%{
+                transform:translateY(0);
+            }
+            50%{
+                transform: translateY(40px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .box1:hover {
+           animation-play-state: paused;
+        }
+.box2{
+            width: 100px;
+            height: 100px;
+           
+            border:6px solid red;
+            border-top:6px solid blue;
+            border-radius: 50%;
+          
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 30px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            top:-400px;
+            animation:spinner 2s linear 2s 4;
+}
+@keyframes spinner{
+  
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes spinner{
+    0%{
+        background-color: black;
+    }
+    30%{
+        background-color: pink;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: skyblue;
+    }
+} */
+     .a{
+            display: flex;
+            gap:20px;
+            align-items: center;
+        }
+        .b{
+            border: 1px solid blue;
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+        }
+        .b:hover{
+            background-color:aquamarine;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            /* transition-timing-function: linear; */
+            transition-timing-function:ease-in;
+            
+            border-radius: 50%;
+        }
+        @media(max-width:400px)
+        {body
+            {background-color: blueviolet;}}
+        .c{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        .c:hover{
+            background-color: aqua;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            /* transform: translateX(100px); */
+             transform: translate(100px, 100px);
+        }
+        @media(max-width:400px)
+             {.c{background-color: green;}}
+        
+        .d{
+            border: 1px solid whitesmoke;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+
+        }
+        .d:hover{
+            background-color: blueviolet;
+            border-radius: 50%;
+            transition-delay: 2s;
+            transition-duration: 1s;
+            /* transform: skew(30deg); */
+            /* transform: skewX(30deg); */
+            transform: skewY(30deg);  
+        }
+        .e{
+            border: 1px solid bisque;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        .e:hover{
+            background-color: green;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transform: scale(1.5);
+            /* transform: scaleY(1.5);
+            transform: scaleX(1.5); */
+            /* transform: scale3d(1.5, 2 ,3); */
+        }
+        .f{
+            border:1px solid blue;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .f:hover{
+            background-color: brown;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            transform: rotate(360deg);
+            /* transform: rotateX(360deg); */
+             /* transform: rotateY(360deg); */
+        }
+        .a1{
+            display: flex;
+            gap: 20px;
+        }
+        .g{
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .g:hover{
+            background-color: aquamarine;
+            transition-duration: 2s;
+            transform: matrix(1, 0, 0, 1, 100, 50); 
+        }
+        .g:hover{
+            border:1px solid white;
+            background-color: green;
+            height: 200px;
+            width:200px;
+            transform: matrix(1, 0, 0, 1, 100, 50); 
+        }
+        .h{
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+            background-color:palevioletred;
+        }
+        .h:hover{
+            background-color: lightgreen;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transform-origin: right;
+            transform: rotate(30deg)scale3d(1.5,2,3);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CSS TutorialSpot</h2>
+        <nav>
+            <a href="#Basic CSS">Basic CSS</a>
+            <a href="pseudoelements.html">Pseudo-Elements</a>
+            <a href="#Animations">Animations </a>
+            <A href="#Transactions">Transactions</A>
+            <a href="#more">More</a>
+        </nav>
+    </header>
+    <section class="home">
+        <h1>Animation</h1>
+        <div class="home-sec">
+            <ul>
+          <li>Animation in CSS means making an element move or change automatically over time. It helps make a website look more attractive and interactive.</li>  
+            <li> CSS animation works in a similar way—it changes an element from one state to another automatically.</li>  
+            <li>CSS Animation is a feature that allows HTML elements to change their style (such as position, size, color, rotation, or opacity) over a specified period of time without using JavaScript.</li>
+           
+            </ul>
+            <p class="p">In CSS, there are 2 main types of animations:</p>
+            <ol>
+                <li>Transition</li>
+                <li>Animation (@keyframes)</li>
+            </ol>
+        </div> 
+        <div class="sec-home">
+            <h3>1. Transition</h3>
+            <ul>
+                <li>Changes an element from one state to another.</li>
+                <li>It starts only when an event happens, such as hovering (:hover), clicking, or focusing.</li>
+                <li>Used for simple effects.</li>
+            </ul>
+        </div>   
+    </section>
+    <section class="syntax">
+       <h2>CSS Animation + Keyframes</h2> 
+       <div class="key-frames">
+       <div class="frames">
+        <p>selector {
+          animation-name: animationName;<br>
+          animation-duration: 2s;<br>
+          animation-iteration-count: infinite;<br>
+          animation-timing-function: ease;<br>
+          animation-delay: 1s; <br>
+          animation-direction: normal;<br>
+        }
+</p>
+</div>
+<div class="key-frames">
+    <p>
+          @keyframes animation-name {<br>
+
+    0% {<br>
+        /* Starting styles */<br>
+    }
+
+    50% {<br>
+        /* Middle styles */<br>
+    }
+
+    100% {<br>
+        /* Ending styles */<br>
+    }
+}</p>
+</div>
+       </div>
+    </section>
+    <section class="exp">
+        <h1>Animations and Key Frames Examples</h1>
+        <div class="exp-key">
+            <div class="animations-exp">
+                <h3>Fade-in and slide-up Card:</h3>
+                <h4>Definition:</h4>
+                <p>The card starts hidden and a little below its position. <br>
+                    Then it slowly becomes visible and moves up to its original place.</p>
+            </div>
+            <div class="box">
+                translateY
+            </div>
+           
+        </div>
+         <div class="animations-exp">
+       <h3> Complex Animation</h3>
+       <p>This element has a complex animation combining fade-in and bounce effects.<br> Hover to pause the animation</p>
+        <div class="box1"></div>
+         <div class="animations-exp">
+            <h3>Loading Spinner</h3>
+            <p>This is a simple loading spinner created with CSS animation.</p>
+            <div class="box2">
+              
+            </div>
+         </div>
+
+        </div>
+        <h2>Transitions </h2>
+          <div class="a">
+    <div class="b">ease-in</div>
+    <div class="c">translate</div>
+    <div class="d">skew</div>
+    <div class="e">scale</div>
+    <div class="f">Rotate</div>
+    
+</div>
+<div class="a1">
+  <div class="g">Matrix</div>
+  <div class="h">Scale3d</div>
+  </div>
+   
+    </section>
+
+    
+</body>
+</html>

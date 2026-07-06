@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden; /* Keeps animation inside the card */
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInside 1s ease forwards;
+}
+
+button {
+    padding: 10px 20px;
+    background: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blue;
+}
+
+@keyframes slideInside {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="content">
+        <h2>Welcome</h2>
+        <p>
+            This content fades in and slides up from inside the card.
+        </p>
+        <button>Read More</button>
+    </div>
+</div>
+    
+</body>
+</html>
