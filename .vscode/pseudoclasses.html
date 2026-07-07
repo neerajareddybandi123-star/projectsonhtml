@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <style>
+        button:active{
+            background-color: green;
+        }
+        a:visited{
+            color:green;
+        }
+        button:visited{
+            color:yellow;
+        }
+        input:focus{
+            color:orange;
+        }
+        p:nth-child(2){
+            color:red;
+        }
+        p:nth-of-type(2){
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ---active-- -->
+    <button>Click me</button><br>
+    <!-- <h1>visited </h1> -->
+     <a href="#">Link</a>
+     <br>
+     <button>clickme</button><br>
+     <br>
+
+     <!-- --focus-- -->
+      <input type="text" placeholder="Enter the name">
+
+      <!-- nth child -->
+       <div>
+        <h1>header1</h1>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+       </div>
+       <!-- nth-of-type() -->
+        <div class="dil">
+            <h1>head1</h1>
+            <h1>head2</h1>
+            <p>para1</p>
+            <p>para2</p>
+            <p>para3</p>
+            <p>para4</p>
+        </div>
+
+</body>
+</html>
