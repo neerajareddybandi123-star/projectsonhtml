@@ -4,21 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Starbucks Menu</title>
-
-    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .tea-img{
+            width: 110px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tea-item{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .tea-item h3{
+            font-size: 22px;
+            font-weight:500px;
+            margin: 0;
+        }
+
+        hr{
+            margin-bottom: 10px;
+        }
+
+     
+    .sec7{
+    display: flex;
+    gap:30px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+.content-sec h1{
+    font-size:18px;
+    font-weight: bold;
+
+}
+.content-sec a{
+    text-decoration: none;
+    line-height: 1.8;
+    color:gray;
+
+}
+.content-sec a:hover{
+    color: black;
+}
+.hr{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.footer{
+    width:100%;
+    max-width:600px;
+    padding:20px 15px;
+    
+}
+.social-icons{
+    display:flex;
+    gap:22px;
+    margin-bottom:45px;
+    margin-left: 90px;
+}
+.social-icons a{
+    width:40px;
+    height:40px;
+    background:#222;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s; 
+    
+}
+.social-icons a:hover{
+    background:#000;
+    transform:scale(1.1);
+    
+}
+.links{
+    list-style:none;
+    margin-left: 60px;  
+}
+.links li{
+    margin-bottom:20px;
+    list-style:none;
+}
+.links li a{
+    text-decoration:none;
+    color:#000;
+    font-size:18px;
+    font-weight:400;
+    line-height:1.4;
+    transition:.3s;
+}
+.links li a:hover{
+    text-decoration:underline;
+}
+.copyright{
+    margin-top:20px;
+    color:#6c6c6c;
+    font-size:18px;
+    margin-left: 90px;  
+}
+.header{
+    position:sticky;
+}
+    </style>
+
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="homepage.html">
             <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg"
             width="50">
         </a>
@@ -30,9 +139,10 @@
         <div class="collapse navbar-collapse" id="nav">
 
             <ul class="navbar-nav me-auto fw-bold">
-                <li class="nav-item px-2"><a class="nav-link" href="#">MENU</a></li>
-                <li class="nav-item px-2"><a class="nav-link" href="#">REWARDS</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="menupage.html">MENU</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="Rewards.html">REWARDS</a></li>
                 <li class="nav-item px-2"><a class="nav-link" href="#">GIFT CARDS</a></li>
+                 
             </ul>
 
             <div class="d-flex align-items-center gap-3">
@@ -42,7 +152,7 @@
                     Find a store
                 </span>
 
-                <button class="btn btn-outline-dark rounded-pill px-4">
+                <button class="btn btn-outline-secondary rounded-pill px-4">
                     Sign in
                 </button>
 
@@ -57,77 +167,87 @@
     </div>
 </nav>
 
-<!-- Second Menu -->
 <div class="border-bottom">
     <div class="container">
         <ul class="nav py-3">
             <li class="nav-item">
-                <a class="nav-link active border-bottom border-3 border-success text-dark" href="#">
+                <a class="nav-link active border-bottom border-3 border-success text-dark fs-8" href="#">
                     Menu
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Featured</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Previous</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="#">Favorites</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fs-8" href="#">Featured</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fs-8" href="#">Previous</a></li>
+            <li class="nav-item"><a class="nav-link text-dark fs-8" href="#">Favorites</a></li>
         </ul>
     </div>
 </div>
 
-<!-- Main Section -->
 <div class="container py-5">
 
-    <div class="row">
+    <div class="row gy-3">
 
-        <!-- Sidebar -->
         <div class="col-lg-3 mb-4">
 
-            <h3 class="fw-bold">The Latest</h3>
+            <h3 class="fw-bold fs-4">The Latest</h3>
 
-            <a class="navbar-brand" href="#">Trending</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Trending</a>
 
-            <a class="navbar-brand" href="#">Energy Refreshers</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Energy Refreshers</a>
 
-            <h3 class="fw-bold mt-5">Protein</h3>
+            <h3 class="fw-bold mt-4 fs-4">Protein</h3>
 
-            <a class="navbar-brand" href="#">Protein Beverages</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Protein Beverages</a>
 
-            <h3 class="fw-bold mt-5">Coffee &<br> Espresso</h3>
-            <a class="navbar-brand" href="#">Hot Coffee & Espresso</a>
-            <a class="navbar-brand" href="#">Cold Coffee & Espresso</a>
-            <h3 class="fw-bold mt-5">Tea</h3>
-            <a class="navbar-brand" href="#">Chai</a>
-            <a class="navbar-brand" href="#">Matcha</a>
-            <a class="navbar-brand" href="#">Hot Tea</a>
-            <a class="navbar-brand" href="#"> Iced Tea</a>
-            <h3 class="fw-bold mt-5">Refreshment</h3>
-            <a class="navbar-brand" href="#"> Refreshers</a>
-            <a class="navbar-brand" href="#"> Energy Refreshers</a>
-            <h3 class="fw-bold mt-5">Frappuccino® <br>Blended<br> Beverage</h3>
+            <h3 class="fw-bold mt-4 fs-4">Coffee &<br> Espresso</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary text-secondary">Hot Coffee & Espresso</a>
+           <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Cold Coffee & Espresso</a>
+            <h3 class="fw-bold mt-4 fs-4">Tea</h3>
+           <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Chai</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Matcha</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Hot Tea</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary"> Iced Tea</a>
+            <h3 class="fw-bold mt-4 fs-4">Refreshment</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary"> Refreshers</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary"> Energy Refreshers</a>
+            <h3 class="fw-bold mt-4 fs-4">Frappuccino® <br>Blended<br> Beverage</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary"> Coffee Frappuccino®</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Crème Frappuccino®</a>
+            <h3 class="fw-bold mt-4 fs-4">Other Sips</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Hot Chocolate, <br>Lemonade & More</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Bottled Beverages</a>
+            <h3 class="fw-bold mt-4 fs-4">Food</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Breakfast</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Bakery</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Treats</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Lunch</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Snacks</a>
+            <h3 class="fw-bold mt-4 fs-4">At Home Coffee</h3>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Whole Bean</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Starbucks VIA® <br>Instant</a>
+            <a href="#" class="d-block mb-2 text-decoration-none text-secondary">Shopping Bag</a>
            
+        </div> 
 
-        </div>
-
-        <!-- Right Content -->
         <div class="col-lg-9">
 
-            <h1 class="display-4 fw-bold">Menu</h1>
+            <h1 class="display-4 fw-bold fs-2">Menu</h1>
 
-            <h2 class="fw-bold mt-5">The Latest</h2>
+            <h2 class="fw-bold mt-4 fs-3">The Latest</h2>
 
             <hr>
 
             <div class="row mt-5">
 
-                <div class="col-md-6 mb-4">
+                <div class="col-md-5 mb-2">
 
                     <div class="d-flex align-items-center">
 
                         <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=200"
                         class="rounded-circle"
-                        width="140"
-                        height="140">
+                        width="110"
+                        height="120">
 
-                        <h3 class="ms-4">Trending</h3>
+                        <h5 class="ms-4 fs-5">Trending</h5>
 
                     </div>
 
@@ -138,25 +258,341 @@
                     <div class="d-flex align-items-center">
 
                         <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200"
-                        class="rounded-circle"
-                        width="140"
-                        height="140">
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
 
-                        <h3 class="ms-4">Energy Refreshers</h3>
+                        <h5 class="ms-4 fs-5">Energy Refreshers</h5>
 
                     </div>
-
                 </div>
+                <h5 class="ms-1 fs-4 fw-bold px-1 mb-4"> Protein</h5>
+                <hr>
+                <div class="col-md-6">
 
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/IcedCaffeLattewProtein?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Protein Beverages</h5>
+
+                    </div>
+                </div>
+                <h5 class="ms-1 fs-4 fw-bold px-1 mb-4"> Coffee & Espresso</h5>
+                <hr>
+                 <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/CaffeLatte?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Hot Coffee & Espresso</h5>
+
+                    </div>
+                </div>
+                 <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/VanillaSweetCreamColdBrew?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Cold Coffee & Espresso</h5>
+
+                    </div>
+                    
+                </div>
+                <h5 class="ms-1 fs-4 fw-bold px-1 mb-4">Tea</h5>
+                <hr>
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="tea-item">
+                                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20220411_ChaiLatte?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Chai">
+                                <h3>Chai</h3>
+                            </div>
+                       
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/IcedMatchaTeaLatte?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Hot Tea">
+                <h3>Hot Tea</h3>
             </div>
 
         </div>
 
+        <div class="col-lg-6">
+
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/HoneyCitrusMintTea?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Matcha">
+                <h3>Matcha</h3>
+            </div>
+
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/IcedBlackTea?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+            </div>
+
+        </div>
+        <h5 class="ms-1 fs-4 fw-bold px-1 mb-4">Refreshment</h5>
+        <hr>
+        <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/StrawberryAcaiLemonadeRefreshers?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Refreshers</h5>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/StrawberryAcai?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Energy Refreshers</h5>
+
+                    </div>
+                </div>
+                <h5 class="ms-1 fs-4 fw-bold px-1 mb-4">  Frappuccino® Blended Beverage</h5>
+                <hr>
+                <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20211210_CaramelRibbonCrunchFrapp?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Coffee Frappuccino®</h5>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/VanillaBeanCremeFrappuccino?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Crème Frappuccino®</h5>
+
+                    </div>
+                </div>
+                <h5 class="ms-1 fs-4 fw-bold px-1 mb-4"> Other Sips</h5>
+                <hr>
+                 <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/HotChocolate?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Hot Chocolate, Lemonade & More</h5>
+
+                    </div>
+                </div>
+                 <div class="col-md-6">
+
+                    <div class="d-flex align-items-center">
+
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/EvolutionFreshOrganicDefenseUp?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85"
+                        class="rounded-circle "
+                        width="110"
+                        height="120" >
+
+                        <h5 class="ms-4 fs-5">Bottled Beveragess</h5>
+
+                    </div>
+                </div>
+                 <h5 class="ms-1 fs-4 fw-bold px-1 mb-4">Food</h5>
+                <hr>
+            </div>
+        </div>
+
+<div class="container py-2">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20210915_BaconCheddarEggSandwich?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Chai">
+                <h3>Breakfast</h3>
+            </div>
+
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/SBX20181129_BirthdayCakePop?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Hot Tea">
+                <h3>Treats</h3>
+            </div>
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20221206_CheeseFruitProteinBox?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Hot Tea">
+                <h3>Snacks</h3>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/SBX20210915_Croissant-onGreen?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Matcha">
+                <h3>Bakery</h3>
+            </div>
+
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/SBX20220207_GrilledCheeseOnSourdough_US?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Iced Tea">
+                <h3>Lunch</h3>
+            </div>
+
+
+        </div>
+        <h5 class="ms-1 fs-4 fw-bold px-1 mb-4"> At Home Coffee</h5>
+        <hr>
+        
+<div class="container py-2">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/PikePlaceRoast2022?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Chai">
+                <h3>Whole Bean</h3>
+            </div>
+             <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorpstage/SBX20210405_SirenShopperBag?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Hot Tea">
+                <h3>Snacks</h3>
+            </div>
+
     </div>
+    <div class="col-lg-6">
 
+            <div class="tea-item">
+                <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20190715_ViaInstantPikePlaceRoast?impolicy=1by1_tight_288&crop=495,495,810,810&wid=288&hei=288&qlt=85" class="tea-img" alt="Matcha">
+                <h3>Bakery</h3>
+            </div>
+        </div>
+    </div>
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
 </div>
+   <hr class="hr">
+   <section class="sec7">
+        <div class="content-sec">
+            <h1>About Us</h1>
+            <a href="#">Our Comapany</a><br>
+            <a href="#">Our Coffee</a><br>
+            <a href="#">About Starbucks</a><br>
+            <a href="#">Starbucks Archive</a><br>
+            <a href="#">Investor Relations</a><br>
+            <a href="#">ICustomer Service</a><br>
+            <a href="#">Contact Us</a><br>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+         <div class="content-sec">
+            <h1>Careers</h1>
+            <a href="#">Culture and Values</a><br>
+            <a href="#">Belonging at Starbucks</a><br>
+            <a href="#">College Achievement Plan</a><br>
+            <a href="#">Alumni Community</a><br>
+            <a href="#">U.S. Careers</a><br>
+            <a href="#">International Careers</a><br>
+        </div>
+        <div class="content-sec">
+            <h1>Social Impact</h1>
+            <a href="#"> Communities</a><br>
+            <a href="#">Starbucks Foundations</a><br>
+            <a href="#">Sustainability</a><br>
+            <a href="#">Environmental and Social Impact Reporting</a><br>
+        </div>
+         <div class="content-sec">
+            <h1>For Business Partners</h1>
+            <a href="#"> Landlord Support Center</a><br>
+            <a href="#">Suppliers</a><br>
+            <a href="#">Corporate Gift Card Sales</a><br>
+            <a href="#">Office and Foodservice Coffee</a><br>
+        </div>
+        <div class="content-sec">
+            <h1>Order and Pick Up</h1>
+            <a href="#">Order on the App</a><br>
+            <a href="#">Order on the Web</a><br>
+            <a href="#">Delivery</a><br>
+            <a href="#">Order and Pick Up Options</a><br>
+            <a href="#">Explore and Find Coffee for Home</a><br>
+        </div>
+    </section>
+    <hr>
+    <footer class="footer">
+        <div class="social-icons">
+          <a href="https://open.spotify.com/user/starbucks" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+          <a href="https://www.facebook.com/Starbucks/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.pinterest.com/starbucks/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://www.instagram.com/starbucks" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/starbucks" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://x.com/starbucks" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Consumer Health Privacy Notice</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                <li><a href="#">Starbucks Transparency in Supply Chains Statement</a></li>
+                <li><a href="#">Accessibility</a></li>
+                 <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+        </div>
+         <p class="copyright">
+            &copy; 2026 Starbucks Coffee Company. All rights reserved.
+        </p>
+    </footer>
+
+  
+<nav class="bg-success py-3 header">
+  <div class="container d-flex align-items-center">
+    <div class="ms-auto me-auto">
+      
+      <small class="text-white fw-semibold">
+        For item availability
+      </small>
+
+      <div class="d-flex align-items-center border-bottom border-secondary pb-2">
+        
+        <span class="text-white fw-bold">
+          Choose a store
+        </span>
+
+        <i class="bi bi-chevron-down text-secondary ms-auto"></i>
+
+      </div>
+
+    </div>
+    <a href="#" class="text-secondary fs-3">
+      <i class="bi bi-bag"></i>
+    </a>
+
+  </div>
+</nav>
+
+
+
 
 </body>
 </html>
