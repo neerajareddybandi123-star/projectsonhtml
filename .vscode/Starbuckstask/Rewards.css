@@ -1,0 +1,121 @@
+    body{
+        background-color: #f8f7f2;
+    }
+    
+    .main{
+           background-color: bisque;
+        }
+        .main-content{
+            display: flex;
+            height: 500px;
+           justify-content: center;
+           align-items: center;
+          background-color: antiquewhite;
+        }
+        .content h3{
+            font-size: 28px;
+            text-align: center;
+            color:lightsalmon;
+        }
+        .content h2{
+            font-size: 50px;
+            text-align: center;
+            color: teal;
+        }
+        .content p{
+            font-size: 20px;
+            text-align: center;
+        }
+        .image img{
+            margin-left:180px;
+        }
+        .btn4{
+            text-align: center;
+            margin-left:180px;
+            background-color:lawngreen;
+            color:white;
+            border: 2px solid white;
+            border-radius:400px;
+            width: 100px;
+            height: 40px;
+        }
+        .content-sec{
+            background-color:#f8f7f2;
+            margin-bottom: 100px;
+        }
+        .content-sec h2{
+            margin-top:40px;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            margin-left:550px;
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .para{
+            margin-left: 480px;
+            margin-bottom:100px;
+        }
+        .stars{
+            display: flex;
+            /* gap:10px; */
+           
+        }
+        .stars-img{
+            margin-left:100px;
+        }
+        .stars-img img{
+            justify-content: center;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        .stars-img h3{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .stars-img p{
+            font-size: 15px;
+        }
+      .card1{
+        margin-bottom: 90px;
+    }
+    /* .favorites{
+        background-color: antiquewhite;
+        height: 80px;
+
+    } */
+    .reward-section{
+    background:#f6f2ea;
+    border-radius:30px;
+}
+
+.star-menu .nav-link{
+    color:#1e3932;
+    font-size:32px;
+    font-weight:700;
+}
+
+.star-menu .nav-link.active{
+    border-bottom:4px solid #00754a;
+    color:#1e3932;
+}
+
+.reward-text{
+    color:#1e3932;
+    font-size:28px;
+}
+.para1{
+    margin-right:120px;
+    font-size: 20px;
+}
+.img img{
+    margin-left: 40px;
+}
+.favorites{
+    width:95%;
+    background-color: #f3f1e7;
+}
+
+    
+        
