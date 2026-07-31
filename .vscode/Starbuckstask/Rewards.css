@@ -1,5 +1,5 @@
     body{
-        background-color: #f8f7f2;
+        background-color: white;
     }
     
     .main{
@@ -12,6 +12,7 @@
            align-items: center;
           background-color: antiquewhite;
         }
+        
         .content h3{
             font-size: 28px;
             text-align: center;
@@ -40,7 +41,7 @@
             height: 40px;
         }
         .content-sec{
-            background-color:#f8f7f2;
+            background-color:white;
             margin-bottom: 100px;
         }
         .content-sec h2{
@@ -114,8 +115,276 @@
 }
 .favorites{
     width:95%;
-    background-color: #f3f1e7;
+    background-color:#f2e8d5;
+    margin-left: 40px;
 }
+.img-class{
+    background-color:#f3f1e7;
+    
+}
+.partnership-section{
+    padding:70px 0;
+    background-color: #f8f7f2;
+}
+.section-title{
+    font-size:52px;
+    font-weight:700;
+    color:#1e3932;
+}
+.section-title{
+    font-size:52px;
+    font-weight:700;
+    color:#1e3932;
+}
+.section-text{
+    font-size:20px;
+    color:#333;
+    margin-top:18px;
+    margin-bottom:55px;
+}
+.partner-card{
+    background:#ece7df;
+    border-radius:35px;
+    padding:50px 35px;
+    height:100%;
+    transition:.3s;
+}
+.partner-card:hover{
+    transform:translateY(-5px);
+}
+.partner-logo{
+    max-width:260px;
+    width:100%;
+    margin-bottom:35px;
+}
+.partner-card p{
+    font-size:20px;
+    color:#2d2d2d;
+    line-height:1.6;
+    min-height:110px;
+}
+.btn-details{
+    border:2px solid #00754a;
+    color:#00754a;
+    border-radius:50px;
+    padding:10px 35px;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+
+.btn-details:hover{
+    background:#00754a;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .section-title{
+            font-size:38px;
+            }
+
+            .section-text{
+                font-size:18px;
+            }
+
+            .partner-card{
+                margin-bottom:25px;
+            }
+}
+.sec-4{
+    background-color: #f2e8d5;
+    
+    padding:20px 0;
+
+}
+.account-sec{
+    /* background-color: #f2e8d5; */
+    display: flex;
+   
+}
+.free-sec img{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+}
+.account-con{
+    display: flex;
+    justify-content: center; 
+}
+.sec5{
+    margin-bottom: 40px;
+    background-color:white;
+}
+.sec5 h3{
+    justify-content: center;
+    margin-left: 550px;
+
+}
+.sec5 p{
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+.app-section{
+    background:#f1f1dd;
+    padding:80px 0;
+    height: 550px;
+}
+.app-content h2{
+    color:#1e3932;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.app-content p{
+    font-size:22px;
+    color:#333;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+.qr-code{
+    width:240px;
+    border-radius:20px;
+}
+.app-image{
+    width:100%;
+    max-width:700px;
+    border-radius:50%;
+}
+@media(max-width:992px){
+    .app-content{
+        text-align:center;
+        margin-bottom:40px;
+    }
+   .app-content h2{
+     font-size:40px;
+    }
+    .app-content p{
+        font-size:18px;
+    }
+    .qr-code{
+        width:180px;
+    }
+    .app-image{
+        max-width:100%;
+        }
+}
+
+.terms-section{
+    padding:70px 0;
+}
+.terms-section h2{
+    font-size:20px;
+    font-weight:700;
+    color:#4f4f4f;
+    margin-bottom:20px;
+}
+.terms-section h3{
+    font-size:18px;
+    font-weight:700;
+    color:#4f4f4f;
+    margin-top:45px;
+    margin-bottom:20px;
+}
+.terms-section p,
+.terms-section li{
+    font-size:15px;
+    line-height:1.4;
+    color:#000;
+}
+.terms-section a{
+   color:#00754a;
+    text-decoration:underline;
+}
+.terms-section ul{
+    padding-left:25px;
+}
+
+.sec8{
+    display: flex;
+    gap:70px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.content-sec1 h1{
+    font-size:18px;
+    font-weight: bold;
+
+}
+.content-sec1 a{
+    text-decoration: none;
+    line-height: 1.8;
+    color:gray;
+
+}
+.content-sec1 a:hover{
+    color: black;
+}
+hr{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.footer{
+    width:100%;
+    max-width:600px;
+    padding:20px 15px;
+    
+}
+.social-icons{
+    display:flex;
+    gap:22px;
+    margin-bottom:45px;
+    margin-left: 10px;
+}
+.social-icons a{
+    width:40px;
+    height:40px;
+    background:#222;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:24px;
+    transition:.3s;   
+}
+.social-icons a:hover{
+    background:#000;
+    transform:scale(1.1);
+}
+.links{
+    list-style:none;
+}
+.links li{
+    margin-bottom:20px;
+    list-style:none;
+}
+.links li a{
+    text-decoration:none;
+    color:#000;
+    font-size:18px;
+    font-weight:400;
+    line-height:1.4;
+    transition:.3s;
+}
+.links li a:hover{
+    text-decoration:underline;
+}
+.copyright{
+    margin-top:20px;
+    color:#6c6c6c;
+    font-size:18px;
+}
+
+
+
+
+ 
 
     
         
